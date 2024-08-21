@@ -1,0 +1,27 @@
+//- counter
++parallax({
+	img: 'bg-counter-3',
+	innerClass: 'section-inset-9 context-dark'
+})
+	.container: .row.row-30.justify-content-center.justify-content-xl-between.align-items-lg-end
+		.col-sm-6.col-md-3
+			+counter-classic({
+				number: '640',
+				title: 'projects'
+			})
+		.col-sm-6.col-md-3
+			+counter-classic({
+				number: '15',
+				title: 'awards won'
+			})
+		.col-sm-6.col-md-3
+			+counter-classic({
+				number: '24',
+				title: 'partners'
+			})
+		.col-sm-6.col-md-3
+			+counter-classic({
+				number: '15',
+				title: 'new clients'
+			})
+='\n'

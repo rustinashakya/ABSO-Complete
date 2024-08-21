@@ -1,0 +1,126 @@
+/** @section Countdown */
+// Variables
+// Default colors
+$countdown-foreground-color:  $secondary;
+$countdown-background-color:  $gray-1;
+$countdown-heading-color:     $body-color;
+$countdown-counter-color:     $gray-800;
+
+// Contrast colors
+$countdown-foreground-contrast:  $secondary;
+$countdown-background-contrast:  $gray-1;
+$countdown-heading-contrast:     $gray-6;
+$countdown-counter-contrast:     $gray-1;
+
+
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  @include group(20px);
+
+  @include media-breakpoint-up(md) {
+	@include group(30px);
+  }
+}
+
+.countdown-block {
+  flex-basis: 136px;
+  flex-shrink: 1;
+  display: block;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+.countdown-number {
+  position: relative;
+}
+.countdown-block-seconds {
+  display: none;
+
+  @include media-breakpoint-up(sm) {
+	display: block;
+  }
+}
+
+.countdown-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.countdown-circle {
+  fill: transparent;
+}
+
+.countdown-circle-bg {
+  fill: transparent;
+  stroke: $gray-1;
+  stroke-width: .74px;
+}
+
+.countdown-circle-fg {
+  fill: transparent;
+  stroke: $primary;
+  stroke-width: 2.21px;
+}
+
+.countdown-wrap {
+  position: absolute;
+  top: 52%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.countdown-counter {
+  display: block;
+  font-weight: 500;
+  letter-spacing: .05em;
+  line-height: 1;
+  margin: 0;
+  color: $countdown-counter-color;
+
+}
+
+.countdown-title {
+  color: rgba($countdown-heading-color, .5);
+  text-transform: uppercase;
+  // Small <576px
+  @include media-breakpoint-down(xs) {
+    font-size: 14px
+  }
+}
+
+
+// Context styling
+%context-dark {
+  .countdown-circle-bg {stroke: rgba($white, .58);}
+  .countdown-circle-fg {stroke: $primary;}
+  .countdown-title {color: rgba($white, .5);}
+  .countdown-counter {color: $white;}
+}
+
+// Offsets
+* + .countdown { margin-top: 33px; }
+* + .countdown-title{ margin-top: 14px; }
+
+// Medium ≥576px
+@include media-breakpoint-up(sm) {
+  * + .countdown-title { margin-top: 20px; }
+}
+
+// Extra large ≥1200px
+@include media-breakpoint-up(xl) {
+  * + .countdown { margin-top: 48px; }
+  .countdown + p { margin-top: 39px; }
+}

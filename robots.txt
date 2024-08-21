@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /resources/admin/
+Disallow: /app/database/
+
+Sitemap: https://qyec.innepal.biz/sitemap.xml

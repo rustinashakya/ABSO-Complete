@@ -1,0 +1,121 @@
+extends  ../_skeleton
+
+//- Includes
+include ../sections/_header-classic
+include ../sections/_footer-classic
+include ../components/_ui-thumbnail
+
+block variables
+	- var activeCategory = 'projects'
+	- var pageName = 'Grid Gallery'
+
+block page  
+	// Page Header
+	+navbar-classic({
+		logo: logo.default
+	})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-1-195x164',
+				imgOriginal: 'project-1-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-2-195x164',
+				imgOriginal: 'project-2-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-3-195x164',
+				imgOriginal: 'project-3-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-4-195x164',
+				imgOriginal: 'project-4-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-5-195x164',
+				imgOriginal: 'project-5-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-6-195x164',
+				imgOriginal: 'project-6-1200x800-original'
+			})
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-typography'
+	})
+
+	// Grid Gallery
+	section.section.section-lg.bg-default.isotope-wrap
+		.container
+			.isotope-filters.isotope-filters-horizontal
+				//- Isotope Filters
+				button.isotope-filters-toggle.button.button-sm.button-icon.button-icon-right.button-gray-3(data-custom-toggle='.isotope-filters-list', data-custom-toggle-disable-on-blur='true')
+					span.icon.mdi.mdi-chevron-down
+					| Filter
+				ul.isotope-filters-list
+					li: a.active(href='#', data-isotope-filter='*', data-isotope-group='gallery') All
+					li: a(href='#', data-isotope-filter='Type 1', data-isotope-group='gallery') Reconstruction
+					li: a(href='#', data-isotope-filter='Type 2', data-isotope-group='gallery') Architectural Design
+		.container-fluid.container-inset-0
+			.row.row-30.row-desktop-8.gutters-8.isotope.hoverdir(data-isotope-layout='masonry', data-column-class='.col-1', data-lightgallery='group')
+				.col-1.isotope-item.isotope-sizer
+				.col-sm-6.col-lg-4.col-xxl-3.isotope-item(data-filter='Type 2')
+					+thumbnail-modern({
+						img: 'grid-gallery-1-474x355',
+						imgOriginal: 'project-11',
+						nameProject: 'Smith office Center'
+					}).hoverdir-item(data-hoverdir-target='.thumbnail-modern-caption')
+				.col-sm-6.col-lg-4.col-xxl-3.isotope-item(data-filter='Type 1')
+					+thumbnail-modern({
+						img: 'grid-gallery-2-474x355',
+						imgOriginal: 'grid-gallery-2',
+						nameProject: 'Deltatrans Warehouse'
+					}).hoverdir-item(data-hoverdir-target='.thumbnail-modern-caption')
+				.col-sm-6.col-lg-4.col-xxl-3.isotope-item(data-filter='Type 2')
+					+thumbnail-modern({
+						img: 'grid-gallery-3-474x355',
+						imgOriginal: 'project-3',
+						nameProject: 'fitpower Gym'
+					}).hoverdir-item(data-hoverdir-target='.thumbnail-modern-caption')
+				.col-sm-6.col-lg-4.col-xxl-3.isotope-item(data-filter='Type 1')
+					+thumbnail-modern({
+						img: 'grid-gallery-4-474x355',
+						imgOriginal: 'grid-gallery-3',
+						nameProject: 'Beyer Concert Hall'
+					}).hoverdir-item(data-hoverdir-target='.thumbnail-modern-caption')
+				.col-sm-6.col-lg-4.col-xxl-3.isotope-item(data-filter='Type 2')
+					+thumbnail-modern({
+						img: 'grid-gallery-5-474x355',
+						imgOriginal: 'project-13',
+						nameProject: 'Graham Bridge'
+					}).hoverdir-item(data-hoverdir-target='.thumbnail-modern-caption')
+				.col-sm-6.col-lg-4.col-xxl-3.isotope-item(data-filter='Type 1')
+					+thumbnail-modern({
+						img: 'grid-gallery-6-474x355',
+						imgOriginal: 'project-14',
+						nameProject: 'Dallas Art Park'
+					}).hoverdir-item(data-hoverdir-target='.thumbnail-modern-caption')
+				.col-sm-6.col-lg-4.col-xxl-3.isotope-item(data-filter='Type 2')
+					+thumbnail-modern({
+						img: 'grid-gallery-7-474x355',
+						imgOriginal: 'project-6',
+						nameProject: 'wilson co. Headquarters'
+					}).hoverdir-item(data-hoverdir-target='.thumbnail-modern-caption')
+				.col-sm-6.col-lg-4.col-xxl-3.isotope-item(data-filter='Type 1')
+					+thumbnail-modern({
+						img: 'grid-gallery-8-474x355',
+						imgOriginal: 'grid-gallery-8',
+						nameProject: 'Abington University'
+					}).hoverdir-item(data-hoverdir-target='.thumbnail-modern-caption')
+	='\n'
+
+	include ../sections/_section-newsletter
+	// Page Footer
+	+footer-classic({}) 

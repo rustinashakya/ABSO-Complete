@@ -1,0 +1,93 @@
+extends  ../_skeleton
+
+//- Includes
+include ../sections/_header-classic
+include ../sections/_footer-classic
+include ../components/_ui-thumbnail
+include ../components/_ui-counters
+
+block variables
+	- var activeCategory = 'pages'
+	- var pageName = 'Counters'
+
+block page  
+	// Page Header
+	+navbar-classic({
+		logo: logo.default
+	})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-1-195x164',
+				imgOriginal: 'project-1-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-2-195x164',
+				imgOriginal: 'project-2-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-3-195x164',
+				imgOriginal: 'project-3-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-4-195x164',
+				imgOriginal: 'project-4-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-5-195x164',
+				imgOriginal: 'project-5-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-6-195x164',
+				imgOriginal: 'project-6-1200x800-original'
+			})
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-typography'
+	})
+
+	// Counter Classic
+	section.section.section-sm.section-first.bg-default
+		.container
+			h3.font-weight-bold.text-spacing-50 #1
+	='\n'
+	include ../components/_ui-counter-1
+
+	// Counter Modern
+	section.section.section-sm.section-bottom-0.bg-default
+		.container
+			h3.font-weight-bold.text-spacing-50 #2
+		+parallax-block({
+			img: 'bg-counter-2',
+			innerClass: 'section-xxl context-dark'
+		})
+			.container
+				h5.font-weight-light.text-spacing-200 We are focused on results
+				h2.font-weight-light.text-spacing-200 Our Facts
+				.counter-modern-wrap
+					+counter-modern({
+						number: '101',
+						symbol: '+',
+						title: 'Projects'
+					})
+					+counter-modern({
+						number: '53',
+						title: 'Awards'
+					})
+					+counter-modern({
+						number: '246',
+						symbol: '+',
+						title: 'People'
+					})
+	='\n'
+
+
+	include ../sections/_section-newsletter
+	// Page Footer
+	+footer-classic({})

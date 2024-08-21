@@ -1,0 +1,438 @@
+extends  ../_skeleton
+
+//- Includes
+include ../sections/_header-modern
+include ../sections/_footer-classic
+include ../components/_ui-thumbnail
+include ../components/_ui-box-icon
+include ../components/_ui-box-info
+include ../components/_ui-box-services
+include ../components/_ui-box-project
+include ../components/_ui-quote
+include ../components/_ui-counters
+include ../components/_ui-box-team
+
+block variables
+	- var activeCategory = 'home'
+	- var pageName = 'Home'
+
+
+block page
+	// Page Header
+	+navbar-modern({
+		logo: logo.default
+	})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-1-195x164',
+				imgOriginal: 'project-1-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-2-195x164',
+				imgOriginal: 'project-2-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-3-195x164',
+				imgOriginal: 'project-3-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-4-195x164',
+				imgOriginal: 'project-4-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-5-195x164',
+				imgOriginal: 'project-5-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-6-195x164',
+				imgOriginal: 'project-6-1200x800-original'
+			})
+
+	// Swiper
+	section.section.swiper-container.swiper-slider.swiper-slider-2( data-swiper!= {
+		autoplay: {
+			delay: 5000
+		},
+		effect: 'fade',
+		loop: 'true',
+		simulateTouch: 'false',
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true
+		}
+	} )
+		.swiper-wrapper.text-sm-left
+			.swiper-slide.context-dark(data-slide-bg='images/slide-1-1920x753.jpg')
+				.swiper-slide-caption.section-md: .container: .row: .col-sm-8.col-md-7.col-lg-6.offset-lg-1.offset-xxl-0
+					h3.oh.swiper-title: span.d-inline-block(data-caption-animate='slideInUp' data-caption-delay='0') Best performance over the years
+					h5.swiper-subtitle(data-caption-animate='fadeInLeft' data-caption-delay='300') We are the award-winning industry leaders
+					a.button.button-lg.button-primary.button-winona.button-shadow-2(href='#' data-caption-animate='fadeInUp' data-caption-delay='300') View more
+
+			.swiper-slide.context-dark(data-slide-bg='images/slide-2-1920x753.jpg')
+				.swiper-slide-caption.section-md: .container: .row: .col-sm-9.col-md-8.col-xl-6.offset-lg-1.offset-xxl-0
+					h3.oh.swiper-title: span.d-inline-block(data-caption-animate='slideInDown' data-caption-delay='0') trusted industry leader
+					h5.swiper-subtitle(data-caption-animate='fadeInRight' data-caption-delay='300') High-quality civil engineering projects
+					.button-wrap.oh: a.button.button-lg.button-primary.button-winona.button-shadow-2(href='#' data-caption-animate='slideInUp' data-caption-delay='0') View more
+
+			.swiper-slide.context-dark(data-slide-bg='images/slide-3-1920x753.jpg')
+				.swiper-slide-caption.section-md: .container: .row: .col-sm-8.col-md-7.col-xl-6.offset-lg-1.offset-xxl-0
+					h3.oh.swiper-title: span.d-inline-block(data-caption-animate='slideInLeft' data-caption-delay='100') Welcome to civilgroup
+					h5.swiper-subtitle(data-caption-animate='fadeInUp' data-caption-delay='0') Leading civil engineering company
+					.button-wrap.oh: a.button.button-lg.button-primary.button-winona.button-shadow-2(href='#' data-caption-animate='slideInLeft' data-caption-delay='100') View more
+
+			
+		// Swiper Pagination
+		.swiper-pagination(data-bullet-custom='true')
+
+		// Swiper Navigation
+		.swiper-button-prev
+			.preview: .preview__img
+			.swiper-button-arrow
+		.swiper-button-next
+			.swiper-button-arrow
+			.preview: .preview__img
+	='\n'
+
+	// About Company
+	section.section.section-md.bg-gray-100.text-md-left.section-relative
+		.container
+			.row.row-40.row-lg-50.row-xl-60
+				.col-sm-6.col-lg-4
+					+box-icon-classic({
+						unit: 'flex-column text-center flex-md-row text-md-left',
+						icon: 'linearicons-hammer-wrench',
+						title: 'Modern Technology',
+						text: 'Our team uses the latest technologies to design high-quality civil objects.'
+					})
+				.col-sm-6.col-lg-4
+					+box-icon-classic({
+						unit: 'flex-column text-center flex-md-row text-md-left',
+						icon: 'linearicons-apartment',
+						title: 'Powerful Equipment',
+						text: 'We use modern & powerful equipment to create efficient and reliable infrastructure.'
+					})
+				.col-sm-6.col-lg-4
+					+box-icon-classic({
+						unit: 'flex-column text-center flex-md-row text-md-left',
+						icon: 'linearicons-pencil-ruler',
+						title: 'Quality Materials',
+						text: 'High-quality materials are the absolute guarantee of building dependable facilities.'
+					})
+				.col-sm-6.col-lg-4
+					+box-icon-classic({
+						unit: 'flex-column text-center flex-md-row text-md-left',
+						icon: 'linearicons-coin-dollar',
+						title: 'Affordable Prices',
+						text: 'At Civil Group, we provide all our services and solutions at quite reasonable prices.'
+					})
+				.col-sm-6.col-lg-4
+					+box-icon-classic({
+						unit: 'flex-column text-center flex-md-row text-md-left',
+						icon: 'linearicons-users2',
+						title: 'Professional Team',
+						text: 'We are a team of experienced civil engineers working to build a better world.'
+					})
+				.col-sm-6.col-lg-4
+					+box-icon-classic({
+						unit: 'flex-column text-center flex-md-row text-md-left',
+						icon: 'linearicons-headset',
+						title: '24/7 Support',
+						text: 'Any client of our company receives full 24/7 support by our experienced consultants.'
+					})
+	='\n'
+
+	// What we offer
+	section.section.section-lg.bg-default
+		.container
+			h3.oh-desktop: span.d-inline-block.wow.slideInDown What we offer
+			.owl-carousel.owl-style-3.dots-style-2(data-items='1', data-sm-items='2', data-lg-items='3', data-margin='30', data-autoplay='true' data-dots='true', data-animation-in='fadeIn', data-animation-out='fadeOut')
+				+services-creative({
+					img: 'services-1-370x230',
+					title: 'Value Engineering',
+					text: 'Value engineering is used to solve problems and eliminate any unwanted costs.',
+					number: '01'
+				})
+				+services-creative({
+					img: 'services-2-370x230',
+					title: 'HVAC Design',
+					text: 'We provide planning, designing, and drafting for HVAC requirements.',
+					number: '02'
+				})
+				+services-creative({
+					img: 'services-3-370x230',
+					title: 'Geospatial Solutions',
+					text: 'We use geospatial data technology to provide the best geospatial map services.',
+					number: '03'
+				})
+				+services-creative({
+					img: 'services-7-370x230',
+					title: 'Consulting',
+					text: 'Our experts are always ready to consult you on any civil engineering matter.',
+					number: '04'
+				})
+				+services-creative({
+					img: 'services-19-370x230',
+					title: 'Erosion Control',
+					text: 'Our team develops strategies to implement permanent and temporary erosion control.',
+					number: '05'
+				})
+				+services-creative({
+					img: 'services-20-370x230',
+					title: 'Quality Control',
+					text: 'We control the quality of all our projects, especially the most complex ones.',
+					number: '06'
+				})
+
+	='\n'
+
+	// Section CTA
+	+parallax({
+		img: 'bg-cta',
+		innerClass: 'section-lg context-dark text-md-left'
+	})
+		.container: .row.justify-content-end: .col-sm-7.col-md-6.col-lg-5
+			.cta-classic
+				h4.cta-classic-title.wow.fadeInLeft Creating efficient infrastructure since 1994
+				p.cta-classic-text.wow.fadeInRight(data-wow-delay='.1s') We provide efficient civil engineering solutions.
+				a.button.button-lg.button-primary.button-winona.wow.fadeInUp(href='services.html' data-wow-delay='.2s') Our services
+	='\n'
+
+	// Mining machinery
+	section.section.section-xl.bg-default.text-center
+		.container
+			h3.oh-desktop: span.d-inline-block.wow.slideInUp OUR Gallery
+		.container-fluid.container-inset-0
+			.row.row-30.row-desktop-8.gutters-8.hoverdir(data-lightgallery='group')
+				.col-sm-6.col-lg-4.col-xxl-3: .oh-desktop
+					+thumbnail-modern({
+						img: 'grid-gallery-1-474x355',
+						imgOriginal: 'project-11',
+						nameProject: 'Smith office Center'
+					}).wow.slideInUp.hoverdir-item(data-hoverdir-target='.thumbnail-modern-caption')
+				.col-sm-6.col-lg-4.col-xxl-3: .oh-desktop
+					+thumbnail-modern({
+						img: 'grid-gallery-2-474x355',
+						imgOriginal: 'grid-gallery-2',
+						nameProject: 'Deltatrans Warehouse'
+					}).wow.slideInDown.hoverdir-item(data-hoverdir-target='.thumbnail-modern-caption')
+				.col-sm-6.col-lg-4.col-xxl-3: .oh-desktop
+					+thumbnail-modern({
+						img: 'grid-gallery-3-474x355',
+						imgOriginal: 'project-3',
+						nameProject: 'fitpower Gym'
+					}).wow.slideInUp.hoverdir-item(data-hoverdir-target='.thumbnail-modern-caption')
+				.col-sm-6.col-lg-4.col-xxl-3: .oh-desktop
+					+thumbnail-modern({
+						img: 'grid-gallery-4-474x355',
+						imgOriginal: 'grid-gallery-3',
+						nameProject: 'Beyer Concert Hall'
+					}).wow.slideInDown.hoverdir-item(data-hoverdir-target='.thumbnail-modern-caption')
+				.col-sm-6.col-lg-4.col-xxl-3: .oh-desktop
+					+thumbnail-modern({
+						img: 'grid-gallery-5-474x355',
+						imgOriginal: 'project-13',
+						nameProject: 'Graham Bridge'
+					}).wow.slideInDown.hoverdir-item(data-hoverdir-target='.thumbnail-modern-caption')
+				.col-sm-6.col-lg-4.col-xxl-3: .oh-desktop
+					+thumbnail-modern({
+						img: 'grid-gallery-6-474x355',
+						imgOriginal: 'project-14',
+						nameProject: 'Dallas Art Park'
+					}).wow.slideInUp.hoverdir-item(data-hoverdir-target='.thumbnail-modern-caption')
+				.col-sm-6.col-lg-4.col-xxl-3: .oh-desktop
+					+thumbnail-modern({
+						img: 'grid-gallery-7-474x355',
+						imgOriginal: 'project-6',
+						nameProject: 'wilson co. Headquarters'
+					}).wow.slideInDown.hoverdir-item(data-hoverdir-target='.thumbnail-modern-caption')
+				.col-sm-6.col-lg-4.col-xxl-3: .oh-desktop
+					+thumbnail-modern({
+						img: 'grid-gallery-8-474x355',
+						imgOriginal: 'grid-gallery-8',
+						nameProject: 'Abington University'
+					}).wow.slideInUp.hoverdir-item(data-hoverdir-target='.thumbnail-modern-caption')
+	='\n'
+
+	// Latest Project
+	section.section.section-inset-8.bg-image-5.context-dark.text-center
+		.container
+			h3.oh-desktop: span.d-inline-block.wow.slideInDown Featured projects
+			.owl-style-4: .owl-carousel.dots-style-2(data-items='1', data-md-items='2', data-margin='30', data-md-margin='0', data-nav='true', data-dots='true', data-smart-speed='400', data-autoplay='true')
+				+project-classic({
+					img: 'project-7-570x370',
+					title: 'Wilson & Taylor Concert Hall and Entertainment Center (2021)',
+					location: 'florida',
+					text: 'Civil Group provided engineering design and planning for this project completed in early 2021.'
+				})
+				+project-classic({
+					img: 'project-8-570x370',
+					title: 'West Oakland Bridge: Project Design and Initial Planning (2021)',
+					location: 'California',
+					text: 'Our team of engineers cooperated with Dynamics construction company on this ambitious project.'
+				})
+				+project-classic({
+					img: 'project-7-570x370',
+					title: 'Wilson & Taylor Concert Hall and Entertainment Center (2021)',
+					location: 'florida',
+					text: 'Civil Group provided engineering design and planning for this project completed in early 2021.'
+				})
+				+project-classic({
+					img: 'project-8-570x370',
+					title: 'West Oakland Bridge: Project Design and Initial Planning (2021)',
+					location: 'California',
+					text: 'Our team of engineers cooperated with Dynamics construction company on this ambitious project.'
+				})
+	='\n'
+
+	// Section
+	section.section.section-xl.bg-gray-100.text-md-left
+		.container: .row.row-60.justify-content-center.flex-lg-row-reverse
+			.col-md-8.col-lg-6.col-xl-5: .offset-left-xl-70
+				h3.oh-desktop: span.d-inline-block.wow.slideInLeft Our clients
+				.slick-quote
+					// Slick Carousel
+					.slick-slider.carousel-parent(data-autoplay='true', data-swipe='true', data-items='1' data-child='#child-carousel-2', data-for='#child-carousel-2', data-slide-effect='true')
+						.item
+							+quote-modern({
+								text: 'Civil Group has provided professional engineering services to AlphaIndustry for years. They have always been our dedicated partner.',
+								author: 'Stephen Adams',
+								status: '“AlphaIndustry”, CEO'
+							})
+						.item
+							+quote-modern({
+								text: 'We have worked with Civil Group for many years. The quality of work has always been excellent and they are promptly responsive and reliable.',
+								author: 'Sam Peterson',
+								status: '“West Coal Plant”, CFO'
+							})
+						.item
+							+quote-modern({
+								text: 'Civil Group has been an important part of our success. We have had the opportunity to work closely with them on multiple projects.',
+								author: 'Jane McMillan',
+								status: '“South East Plant”, Lead HR Manager'
+							})
+						.item
+							+quote-modern({
+								text: 'This team provides a great level of service on all of our projects. They are an industry leader in the use of BIM technologies for structural design.',
+								author: 'Will Jones',
+								status: '“STC Management”, Sales Manager'
+							})
+					.slick-slider.child-carousel#child-carousel-2(data-arrows='true' data-for='.carousel-parent', data-items='4', data-sm-items='4', data-md-items='4', data-lg-items='4', data-xl-items='4', data-slide-to-scroll='1')
+						.item: +jpg('team-5-83x83', 'img-circle')
+						.item: +jpg('team-6-83x83', 'img-circle')
+						.item: +jpg('team-7-83x83', 'img-circle')
+						.item: +jpg('team-8-83x83', 'img-circle')
+			.col-lg-6.col-xl-7
+				include ../sections/_clients-classic
+	='\n'
+
+	include ../components/_ui-counter-1
+
+	// Section
+	section.section.section-xl.bg-default.text-md-left
+		.container: .row.row-30
+			.col-md-5.col-lg-4.col-xl-3: .box-team
+				h3.oh-desktop: span.d-inline-block.wow.slideInUp Our team
+				h6.title-style-1.wow.fadeInLeft(data-wow-delay='.1s') Professional Civil engineering
+				p.wow.fadeInRight(data-wow-delay='.2s') We are a team of dedicated and professional engineers and project managers ready to help.
+				.group-sm.oh-desktop
+					.button-style-1.wow.slideInLeft
+						span.icon.mdi.mdi-email-outline
+						span.button-style-1-text: a(href='contacts.html') Contact us
+					div.wow.slideInRight: #owl-custom-nav-1.owl-custom-nav
+			.col-md-7.col-lg-8.col-xl-9
+				.owl-carousel.owl-style-5(data-items='1', data-sm-items='2', data-lg-items='3', data-margin='30', data-autoplay='false', data-animation-in='fadeIn', data-animation-out='fadeOut', data-navigation-class='#owl-custom-nav-1')
+					+team-modern({
+						img: 'team-18-270x236',
+						name: 'Frank McMillan',
+						status: 'CEO, Managing Director'
+					})
+					+team-modern({
+						img: 'team-19-270x236',
+						name: 'John Smith',
+						status: 'Construction Manager'
+					})
+					+team-modern({
+						img: 'team-3-270x236',
+						name: 'Ben Wilson',
+						status: 'Estimating Manager'
+					})
+					+team-modern({
+						img: 'team-20-270x236',
+						name: 'Ben Fitzgerald',
+						status: 'Quantity Surveyor'
+					})
+					+team-modern({
+						img: 'team-21-270x236',
+						name: 'John Tuff',
+						status: 'Health & Safety Manager'
+					})
+	='\n'
+
+	include ../sections/_section-parallax-newsletter
+
+	// Latest news
+	section.section.section-xl.bg-default.text-md-left
+		.container
+			#tabs-9.tabs-custom.tabs-post: .row.align-items-md-end.align-items-xl-start
+				.col-md-6.tab-content-3.wow.fadeInUp: .tab-content
+					#tabs-9-1.tab-pane.fade.show.active
+						.post-amy-figure
+							+jpg('post-1-570x505')
+							a(href='blog-post.html'): span.icon.linearicons-link2
+					#tabs-9-2.tab-pane.fade
+						.post-amy-figure
+							+jpg('post-2-570x505')
+							a(href='blog-post.html'): span.icon.linearicons-link2
+					#tabs-9-3.tab-pane.fade
+						.post-amy-figure
+							+jpg('post-3-570x505')
+							a(href='blog-post.html'): span.icon.linearicons-link2
+	
+				.col-md-6.index-1
+					h3.tabs-post-title.oh-desktop: span.d-inline-block.wow.slideInDown Latest news
+					ul.nav.nav-tabs
+						li.nav-item.wow.fadeInRight(role='presentation')
+							a.nav-link.active(href='#tabs-9-1' data-toggle='tab')
+							.post-amy
+								h5.post-amy-title: a(href='blog-post.html') Repairs To Commercial Buildings: What To Think About
+								ul.post-amy-info.list-inline
+									li.post-amy-time
+										span.icon.mdi.mdi-clock
+										time(datetime='2021-05-26') May 26, 2021
+									li.post-amy-autor
+										span.icon.mdi.mdi-account-outline
+										a(href='#') Jane Williams
+						li.nav-item.wow.fadeInRight(role='presentation')
+							a.nav-link(href='#tabs-9-2' data-toggle='tab')
+							.post-amy
+								h5.post-amy-title: a(href='blog-post.html') Questions To Ask Your Contractor Before Carrying Out Road Maintenance
+								ul.post-amy-info.list-inline
+									li.post-amy-time
+										span.icon.mdi.mdi-clock
+										time(datetime='2021-05-26') May 26, 2021
+									li.post-amy-autor
+										span.icon.mdi.mdi-account-outline
+										a(href='#') Jane Williams
+						li.nav-item.wow.fadeInRight(role='presentation')
+							a.nav-link(href='#tabs-9-3' data-toggle='tab')
+							.post-amy
+								h5.post-amy-title: a(href='blog-post.html') 8 Useful Tips on Preparing For Drainage Construction
+								ul.post-amy-info.list-inline
+									li.post-amy-time
+										span.icon.mdi.mdi-clock
+										time(datetime='2021-05-26') May 26, 2021
+									li.post-amy-autor
+										span.icon.mdi.mdi-account-outline
+										a(href='#') Jane Williams
+
+	='\n'
+
+	// Page Footer
+	+footer-classic({
+		name: logo.name
+	})

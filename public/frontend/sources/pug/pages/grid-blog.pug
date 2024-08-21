@@ -1,0 +1,104 @@
+extends  ../_skeleton
+
+//- Includes
+include ../sections/_header-classic
+include ../sections/_footer-classic
+include ../components/_ui-thumbnail
+include ../components/_ui-posts
+include ../components/_ui-pagination
+
+block variables
+	- var activeCategory = 'blog'
+	- var pageName = 'Grid blog'
+
+block page  
+	// Page Header
+	+navbar-classic({
+		logo: logo.default
+	})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-1-195x164',
+				imgOriginal: 'project-1-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-2-195x164',
+				imgOriginal: 'project-2-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-3-195x164',
+				imgOriginal: 'project-3-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-4-195x164',
+				imgOriginal: 'project-4-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-5-195x164',
+				imgOriginal: 'project-5-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-6-195x164',
+				imgOriginal: 'project-6-1200x800-original'
+			})
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-typography'
+	})
+
+	// Grid Blog
+	section.section.section-lg.bg-default
+		.container
+			.row.row-40.row-lg-60.justify-content-center
+				.col-sm-6.col-lg-4.order-lg-1
+					+post-classic({
+						img: 'post-1-370x210',
+						time: {datetime: '2021-04-30', dateText: 'April 30, 2021'},
+						title: 'Repairs To Commercial Buildings:  What To Think About'
+					})
+				.col-sm-6.col-lg-4.order-lg-1
+					+post-classic({
+						mod: 'post-classic-2',
+						img: 'post-2-370x365',
+						time: {datetime: '2021-04-25', dateText: 'April 25, 2021'},
+						title: 'Questions To Ask Your Contractor Before Carrying Out Road Maintenance'
+					})
+				.col-sm-6.col-lg-4.order-md-3.order-lg-1
+					+post-classic({
+						img: 'post-3-370x210',
+						time: {datetime: '2021-04-05', dateText: 'April 05, 2021'},
+						title: 'How To Keep Plot Foundations Waterproof:  10 Useful Tips'
+					})
+				.col-sm-6.col-lg-4.order-md-2.order-lg-1
+					+post-classic({
+						mod: 'post-classic-2',
+						img: 'post-4-370x365',
+						time: {datetime: '2021-06-11', dateText: 'June 11, 2021'},
+						title: 'What To Expect From Civil Engineering Team at Civil Group'
+					})
+				.col-sm-6.col-lg-4.order-md-4.order-lg-1
+					+post-classic({
+						img: 'post-5-370x210',
+						time: {datetime: '2021-06-06', dateText: 'June 06, 2021'},
+						title: '8 Useful Tips on Preparing For Drainage Construction'
+					})
+				.col-sm-6.col-lg-4.order-md-5.order-lg-1
+					+post-classic({
+						mod: 'post-classic-2',
+						img: 'post-6-370x365',
+						time: {datetime: '2021-06-06', dateText: 'June 06, 2021'},
+						title: 'Super-hydrophobic Cement: Its Applications and Advantages'
+					})
+			.pagination-wrap: +pagination-bootstrap(null, 1, 3)
+	='\n'
+
+	include ../sections/_section-newsletter
+	// Page Footer
+	+footer-classic({})

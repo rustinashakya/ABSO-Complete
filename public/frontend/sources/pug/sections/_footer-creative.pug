@@ -1,0 +1,55 @@
+mixin footer-creative(obj)
+  footer.section.section-md.footer-creative.context-dark(class=obj.mod)
+      .container
+        .row.row-60.justify-content-center.justify-content-md-between
+          .col-sm-8.col-md-5.col-lg-3
+            h5.footer-creative-title.oh-desktop: span.d-inline-block.wow.slideInDown Get in touch
+            ul.footer-creative-contacts.d-inline-block.d-md-block
+              li.wow.fadeInRight
+                p.footer-creative-contacts-title Free consultation
+                a.phone(href='tel:#') +1 718-999-3939
+              li.wow.fadeInRight(data-wow-delay='.05s')
+                p.footer-creative-contacts-title Office
+                a.address(href='#') 514 S. Magnolia St. Orlando, FL 32806
+              li.wow.fadeInRight(data-wow-delay='.1s')
+                p.footer-creative-contacts-title E-mail
+                a.mail(href='mailto:#') info@demolink.org
+            hr
+            +widget-list([], '', 'footer-social-list footer-social-list-2')
+
+          .col-sm-9.col-md-6.col-lg-5.col-xl-4
+            h5.footer-creative-title.oh-desktop: span.d-inline-block.wow.slideInDown Popular news
+            .list-popular-post
+              each itemPost in obj.posts
+                .list-popular-post-item.wow.fadeInRight
+                  +post-minimal({
+                    mod: 'post-minimal-2',
+                    unit: 'flex-column text-center flex-sm-row text-sm-left',
+                    img: itemPost.img,
+                    title: itemPost.title,
+                    time: {datetime: '2021-04-20', dateText: 'April 20, 2021'}
+                  })
+            p.wow.fadeInRight Sign up today for tips and latest news
+            // RD Mailform
+            form.rd-form.rd-mailform.rd-form-inline.rd-form-inline-sm.wow.fadeInUp(data-form-output="form-output-global", data-form-type='subscribe', method='post', action='bat/rd-mailform.php')
+              .form-wrap
+                input.form-input(id="subscribe-form-2-email" type="email" name="email" data-constraints="@Email @Required")
+                label.form-label(for="subscribe-form-2-email") Enter your E-mail
+              .form-button.form-button-2
+                button.button.button-sm.button-icon-2.button-primary.button-winona(type="submit"): span.icon.mdi.mdi-telegram
+
+          .col-sm-10.col-md-12.col-lg-3.col-xl-3
+            .oh-desktop: .inset-left-xl-20.wow.slideInLeft
+              a.brand(href='index.html'): +png(obj.logo)
+              p=obj.text
+              ul.footer-creative-list.d-inline-block.d-sm-block
+                li: a(href='about-us.html') About us
+                li: a(href='services.html') Services
+                li: a(href='#') Our Team
+                li: a(href='projects.html') Projects
+                li: a(href='grid-blog.html') News
+                li: a(href='contacts.html') Contacts
+                li: a(href='#') FAQ
+                li: a(href='shop.html') Shop
+              +rights({ name: obj.name })
+            .bg-footer-creative

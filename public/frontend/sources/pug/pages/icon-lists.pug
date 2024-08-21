@@ -1,0 +1,169 @@
+extends  ../_skeleton
+
+//- Includes
+include ../sections/_header-classic
+include ../sections/_footer-classic
+include ../components/_ui-thumbnail
+include ../components/_ui-box-icon
+
+block variables
+	- var activeCategory = 'pages'
+	- var pageName = 'Icon Lists'
+
+block page  
+	// Page Header
+	+navbar-classic({
+		logo: logo.default
+	})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-1-195x164',
+				imgOriginal: 'project-1-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-2-195x164',
+				imgOriginal: 'project-2-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-3-195x164',
+				imgOriginal: 'project-3-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-4-195x164',
+				imgOriginal: 'project-4-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-5-195x164',
+				imgOriginal: 'project-5-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-6-195x164',
+				imgOriginal: 'project-6-1200x800-original'
+			})
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-typography'
+	})
+
+	// Icon Classic
+	section.section.section-lg.bg-default
+		.container
+			h3.font-weight-bold.text-spacing-50 #1
+			.row.row-md.row-50
+				.col-sm-6.col-xl-4
+					+box-icon-classic({
+						unit: 'flex-column text-center flex-md-row text-md-left',
+						icon: 'linearicons-hammer-wrench',
+						title: 'Modern Technology',
+						text: 'Our team uses the latest technologies to design high-quality civil objects.'
+					})
+				.col-sm-6.col-xl-4
+					+box-icon-classic({
+						unit: 'flex-column text-center flex-md-row text-md-left',
+						icon: 'linearicons-apartment',
+						title: 'Powerful Equipment',
+						text: 'We use modern & powerful equipment to create efficient and reliable infrastructure.'
+					})
+				.col-sm-6.col-xl-4
+					+box-icon-classic({
+						unit: 'flex-column text-center flex-md-row text-md-left',
+						icon: 'linearicons-pencil-ruler',
+						title: 'Quality Materials',
+						text: 'High-quality materials are the absolute guarantee of building dependable facilities.'
+					})
+	='\n'
+
+	// Icon Creative
+	+parallax({
+		img: 'bg-icon',
+		innerClass: 'section-xxl context-dark'
+	})
+		.container
+			h3.font-weight-bold.text-spacing-200 #2
+			.row.row-lg.row-30
+				.col-sm-6.col-md-4.col-lg-3
+					+box-icon-creative({
+						icon: 'linearicons-trophy2',
+						title: '25 Years of Experience'
+					})
+				.col-sm-6.col-md-4.col-lg-3
+					+box-icon-creative({
+						icon: 'linearicons-flag',
+						title: '460 completed projects'
+					})
+				.col-sm-6.col-md-4.col-lg-3
+					+box-icon-creative({
+						icon: 'linearicons-user',
+						title: 'More than 500 Team Members'
+					})
+				.col-sm-6.col-md-4.col-lg-3
+					+box-icon-creative({
+						icon: 'linearicons-medal-empty icon-big',
+						title: '25 award-winning projects'
+					})
+	='\n'
+
+	// Counter Modern
+	section.section.section-sm.section-first.bg-default
+		.container
+			h3.font-weight-bold.text-spacing-50 #3
+			.row.row-lg.row-50.bordered-1
+				.col-sm-6.col-lg-4
+					+box-icon-modern({
+						icon: 'mdi mdi-road-variant',
+						title: 'Reliable Materials'
+					})
+				.col-sm-6.col-lg-4
+					+box-icon-modern({
+						icon: 'mdi mdi-home-modern ',
+						title: 'Innovative Solutions',
+						text: 'Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.'
+					})
+				.col-sm-6.col-lg-4
+					+box-icon-modern({
+						icon: 'mdi mdi-worker icon-39',
+						title: 'Qualified Team',
+						text: 'Nisl condimentum id venenatis a condimentum vitae sapien pellentesque.'
+					})
+	='\n'
+
+	// Counter Modern
+	section.section.section-sm.section-last.bg-default
+		.container
+			h3.font-weight-bold.text-spacing-50 #4
+			.row.row-30.row-desktop-0
+				.col-sm-6.col-lg-4.col-xl-3
+					+box-icon-megan({
+						icon: 'linearicons-user',
+						title: 'Professional Team'
+					})
+				.col-sm-6.col-lg-4.col-xl-3
+					+box-icon-megan({
+						icon: 'linearicons-cash-dollar',
+						title: 'Affordable Prices',
+						text: 'Mattis molestie a iaculis at erat pellentesque adipiscing. Est ullamcorper eget nulla'
+					})
+				.col-sm-6.col-lg-4.col-xl-3
+					+box-icon-megan({
+						icon: 'linearicons-headset',
+						title: '24/7 Support',
+						text: 'Nisl condimentum id venenatis a condimentum vitae sapien pellentesque.'
+					})
+				.col-sm-6.col-lg-4.col-xl-3
+					+box-icon-megan({
+						icon: 'linearicons-pencil-ruler',
+						title: 'Best Solutions',
+						text: 'Odio tempor orci dapibus ultrices in iaculis nunc sed. Nunc id cursus metus.'
+					})
+	='\n'
+
+	include ../sections/_section-newsletter
+	// Page Footer
+	+footer-classic({})

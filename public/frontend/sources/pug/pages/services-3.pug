@@ -1,0 +1,104 @@
+extends  ../_skeleton
+
+//- Includes
+include ../sections/_header-classic
+include ../sections/_footer-classic
+include ../components/_ui-thumbnail
+include ../components/_ui-box-icon
+
+block variables
+	- var activeCategory = 'pages'
+	- var pageName = 'Services #3'
+
+block page  
+	// Page Header
+	+navbar-classic({
+		logo: logo.default
+	})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-1-195x164',
+				imgOriginal: 'project-1-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-2-195x164',
+				imgOriginal: 'project-2-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-3-195x164',
+				imgOriginal: 'project-3-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-4-195x164',
+				imgOriginal: 'project-4-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-5-195x164',
+				imgOriginal: 'project-5-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-6-195x164',
+				imgOriginal: 'project-6-1200x800-original'
+			})
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-typography'
+	})
+
+	// Services 3
+	section.section.section-inset-5.bg-default
+		.container
+			.row.no-md-gutters.justify-content-center.bordered-2
+				.col-sm-6.col-lg-4
+					.services-modern
+						+box-icon-modern({
+							icon: 'mdi mdi-road-variant',
+							title: 'Value Engineering'
+						})
+				.col-sm-6.col-lg-4
+					.services-modern
+						+box-icon-modern({
+							icon: 'mdi mdi-home-modern',
+							title: 'HVAC Design',
+							text: 'Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt.'
+						})
+				.col-sm-6.col-lg-4
+					.services-modern
+						+box-icon-modern({
+							icon: 'mdi mdi-worker',
+							title: 'Geospatial Solutions',
+							text: 'Mattis molestie a iaculis at erat pellentesque adipiscing. Est ullamcorper eget nulla'
+						})
+				.col-sm-6.col-lg-4
+					.services-modern
+						+box-icon-modern({
+							icon: 'mdi mdi-home',
+							title: 'Bidding Assistance',
+							text: 'Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant. '
+						})
+				.col-sm-6.col-lg-4
+					.services-modern
+						+box-icon-modern({
+							icon: 'mdi mdi-ungroup',
+							title: 'Erosion Control',
+							text: 'Ut tellus elementum sagittis vitae et leo. Sagittis id consectetur purus ut faucibus.'
+						})
+				.col-sm-6.col-lg-4
+					.services-modern
+						+box-icon-modern({
+							icon: 'mdi mdi-math-compass',
+							title: 'Quality Control',
+							text: 'Odio tempor orci dapibus ultrices in iaculis nunc sed. Nunc id cursus metus aliquam.'
+						})
+	='\n'
+
+	include ../sections/_section-newsletter
+	// Page Footer
+	+footer-classic({})

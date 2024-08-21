@@ -1,0 +1,71 @@
+extends  ../_skeleton
+
+//- Includes
+include ../sections/_header-classic
+include ../sections/_footer-classic
+include ../components/_ui-thumbnail
+
+block variables
+	- var activeCategory = 'pages'
+	- var pageName = 'Search Results'
+
+block page 
+	// Page Header
+	+navbar-classic({
+		logo: logo.default
+	})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-1-195x164',
+				imgOriginal: 'project-1-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-2-195x164',
+				imgOriginal: 'project-2-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-3-195x164',
+				imgOriginal: 'project-3-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-4-195x164',
+				imgOriginal: 'project-4-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-5-195x164',
+				imgOriginal: 'project-5-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-6-195x164',
+				imgOriginal: 'project-6-1200x800-original'
+			})
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-typography'
+	})
+
+	// Search results
+	section.section.section-lg.bg-default
+		.container
+			.row.justify-content-center
+				.col-lg-9
+					// RD Search
+					form.rd-form.rd-search.rd-form-inline.rd-form-inline-centered(action='search-results.html' method='GET')
+						.form-wrap
+							label.form-label(for='rd-search-form-input') Search
+							input.form-input(id='rd-search-form-input' type='text' name='s' autocomplete='off')
+						.form-wrap.form-button
+							button.button.button-sm.button-primary(type='submit') Search
+
+					.rd-search-results
+
+	include ../sections/_section-newsletter
+	// Page Footer
+	+footer-classic({})

@@ -1,0 +1,37 @@
+mixin footer-classic(obj)
+  footer.section.footer-classic.context-dark.footer-classic-2(class=obj.mod)
+    .footer-classic-content: .container
+      .row.row-50.row-lg-0.no-gutters
+        .col-sm-6.col-lg-4.wow.fadeInRight(data-wow-delay='0s')
+          .footer-classic-header: h6.footer-classic-title Quick links
+          .footer-classic-body
+            ul.footer-classic-list.d-inline-block.d-sm-block
+              li: a(href='about-us.html') Our History
+              li: a(href='#') FAQ
+              li: a(href='grid-blog.html') Latest News
+              li: a(href='#') Our Team
+              li: a(href='projects.html') Projects
+              li: a(href='contacts.html') Contact Us
+            +widget-list([], '', 'footer-social-list')
+        .col-sm-6.col-lg-4.wow.fadeInRight(data-wow-delay='.1s')
+          .footer-classic-header: .box-width-230: h6.footer-classic-title Get in touch
+          .footer-classic-body: .box-width-230
+            .footer-classic-contacts
+              .footer-classic-contacts-item
+                .unit.unit-spacing-sm.align-items-center
+                  .unit-left
+                    span.icon.icon-24.mdi.mdi-phone
+                  .unit-body
+                    a.phone(href='tel:#') +1 718-999-3939
+              .footer-classic-contacts-item
+                .unit.unit-spacing-sm.align-items-center
+                  .unit-left
+                    span.icon.mdi.mdi-email
+                  .unit-body
+                    a.mail(href='mailto:#') info@demolink.org
+            a.button.button-sm.button-primary.button-winona(href='contacts.html') Request a quote
+
+        .col-lg-4.position-static: .footer-classic-gmap
+          include ../sections/_section-gmap
+
+    .footer-classic-panel: .container: +rights({ name: obj.name })

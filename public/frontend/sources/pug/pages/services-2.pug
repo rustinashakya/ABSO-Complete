@@ -1,0 +1,105 @@
+extends  ../_skeleton
+
+//- Includes
+include ../sections/_header-classic
+include ../sections/_footer-classic
+include ../components/_ui-thumbnail
+include ../components/_ui-box-services
+
+block variables
+	- var activeCategory = 'pages'
+	- var pageName = 'Services #2'
+
+block page  
+	// Page Header
+	+navbar-classic({
+		logo: logo.default
+	})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-1-195x164',
+				imgOriginal: 'project-1-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-2-195x164',
+				imgOriginal: 'project-2-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-3-195x164',
+				imgOriginal: 'project-3-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-4-195x164',
+				imgOriginal: 'project-4-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-5-195x164',
+				imgOriginal: 'project-5-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-6-195x164',
+				imgOriginal: 'project-6-1200x800-original'
+			})
+
+	+breadcrumbs({
+		category: activeCategory, 
+		path: [pageName],
+		bgImage: 'bg-typography'
+	})
+
+	// Services 2
+	section.section.section-lg.bg-default
+		.container
+			.row.row-40.justify-content-center
+				.col-md-6.col-lg-5.col-xl-4
+					+services-classic({
+						img: 'services-1-370x274',
+						icon: 'mdi mdi-road-variant',
+						title: 'Value Engineering',
+						text: 'Designing buildings of all kinds'
+					})
+				.col-md-6.col-lg-5.col-xl-4
+					+services-classic({
+						img: 'services-2-370x274',
+						icon: 'mdi mdi-home-modern',
+						title: 'HVAC Design',
+						text: 'Professional construction services'
+					})
+				.col-md-6.col-lg-5.col-xl-4
+					+services-classic({
+						img: 'services-3-370x274',
+						icon: 'mdi mdi-worker',
+						title: 'Geospatial Solutions',
+						text: 'Ensuring the best quality'
+					})
+				.col-md-6.col-lg-5.col-xl-4
+					+services-classic({
+						img: 'services-4-370x274',
+						icon: 'mdi mdi-home',
+						title: 'Bidding Assistance',
+						text: 'Top-notch solar energy solutions'
+					})
+				.col-md-6.col-lg-5.col-xl-4
+					+services-classic({
+						img: 'services-5-370x274',
+						icon: 'mdi mdi-ungroup',
+						title: 'Erosion Control Design',
+						text: 'Reliable general contractors'
+					})
+				.col-md-6.col-lg-5.col-xl-4
+					+services-classic({
+						img: 'services-6-370x274',
+						icon: 'mdi mdi-math-compass',
+						title: 'Quality Control',
+						text: 'Any equipment for your needs'
+					})
+	='\n'
+
+	include ../sections/_section-newsletter
+	// Page Footer
+	+footer-classic({})

@@ -1,0 +1,84 @@
+extends  ../_skeleton
+
+//- Includes
+include ../sections/_header-classic
+include ../sections/_footer-classic
+include ../components/_ui-progress-bar-linear
+include ../components/_ui-thumbnail
+include ../components/_ui-coundown
+
+block variables
+	- var activeCategory = 'pages'
+	- var pageName = 'Progress Bars'
+
+block page  
+	// Page Header
+	+navbar-classic({
+		logo: logo.default
+	})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-1-195x164',
+				imgOriginal: 'project-1-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-2-195x164',
+				imgOriginal: 'project-2-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-3-195x164',
+				imgOriginal: 'project-3-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-4-195x164',
+				imgOriginal: 'project-4-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-5-195x164',
+				imgOriginal: 'project-5-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-6-195x164',
+				imgOriginal: 'project-6-1200x800-original'
+			})
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-typography'
+	})
+
+	// Section Skill Bars and Time Circles
+	section.section.section-lg.bg-default
+		.container
+			.row.row-50.justify-content-center.justify-content-xl-between.align-items-lg-end
+				.col-md-10.col-lg-6
+					+progress-bar-linear({
+						title: "Dedication",
+						value: "59"
+					})
+					+progress-bar-linear({
+						title: "Knowledge",
+						value: "78"
+					})
+					+progress-bar-linear({
+						title: "Professionalism",
+						value: "69"
+					})
+
+				.col-lg-6
+					+countdown({
+						to: '2022-02-23',
+						array: ['Days', 'Hours', 'Minutes']
+					})
+	='\n'
+
+
+	include ../sections/_section-newsletter
+	// Page Footer
+	+footer-classic({})

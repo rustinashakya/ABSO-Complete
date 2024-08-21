@@ -1,0 +1,904 @@
+extends  ../_skeleton
+
+//- Includes
+include ../sections/_header-classic
+include ../sections/_footer-classic
+include ../components/_ui-thumbnail
+include ../components/_ui-box-icon
+
+block variables
+	- var activeCategory = 'pages'
+	- var pageName = 'Bigmug Line'
+
+block page
+	// Page Header
+	+navbar-classic({
+		logo: logo.default
+	})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-1-195x164',
+				imgOriginal: 'project-1-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-2-195x164',
+				imgOriginal: 'project-2-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-3-195x164',
+				imgOriginal: 'project-3-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-4-195x164',
+				imgOriginal: 'project-4-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-5-195x164',
+				imgOriginal: 'project-5-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-6-195x164',
+				imgOriginal: 'project-6-1200x800-original'
+			})
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-typography'
+	})
+	='\n'
+
+	// Bigmug line
+	section.section.section-lg.bg-default.text-md-left
+		.container
+			h3.text-spacing-50.font-weight-bold Bigmug line
+			.row.row-10.gutters-10
+				+box-icon({
+					icon: 'fl-bigmug-line-add137',
+					code: '\\e000'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-add139',
+					code: '\\e001'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-add149',
+					code: '\\e002'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-airplane86',
+					code: '\\e003'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-alarm31',
+					code: '\\e004'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-arrow592',
+					code: '\\e005'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-attach8',
+					code: '\\e006'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-attachment15',
+					code: '\\e007'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-audio46',
+					code: '\\e008'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-back44',
+					code: '\\e009'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-back46',
+					code: '\\e00a'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-big104',
+					code: '\\e00b'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-book188',
+					code: '\\e00c'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-bookmark28',
+					code: '\\e00d'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-bottle34',
+					code: '\\e00e'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-button5',
+					code: '\\e00f'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-buttons5',
+					code: '\\e010'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-cellphone55',
+					code: '\\e011'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-cellular9',
+					code: '\\e012'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-center10',
+					code: '\\e013'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-chat51',
+					code: '\\e014'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-chat55',
+					code: '\\e015'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-checkmark14',
+					code: '\\e016'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-checkmark15',
+					code: '\\e017'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-checkmark16',
+					code: '\\e018'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-circular220',
+					code: '\\e019'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-circular224',
+					code: '\\e01a'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-circular228',
+					code: '\\e01b'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-circular229',
+					code: '\\e01c'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-clipboard68',
+					code: '\\e01d'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-close42',
+					code: '\\e01e'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-cloud255',
+					code: '\\e01f'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-cloud260',
+					code: '\\e020'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-cocktail26',
+					code: '\\e021'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-code30',
+					code: '\\e022'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-collapse5',
+					code: '\\e023'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-comment45',
+					code: '\\e024'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-compass80',
+					code: '\\e025'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-contract5',
+					code: '\\e026'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-copy23',
+					code: '\\e027'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-crescent23',
+					code: '\\e028'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-cropping1',
+					code: '\\e029'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-cross81',
+					code: '\\e02a'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-cross83',
+					code: '\\e02b'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-cube29',
+					code: '\\e02c'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-double97',
+					code: '\\e02d'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-double98',
+					code: '\\e02e'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-double99',
+					code: '\\e02f'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-down55',
+					code: '\\e030'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-down56',
+					code: '\\e031'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-down58',
+					code: '\\e032'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-down59',
+					code: '\\e033'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-down64',
+					code: '\\e034'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-download136',
+					code: '\\e035'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-download142',
+					code: '\\e036'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-download146',
+					code: '\\e037'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-download147',
+					code: '\\e038'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-download148',
+					code: '\\e039'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-electrical17',
+					code: '\\e03a'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-electronic57',
+					code: '\\e03b'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-email64',
+					code: '\\e03c'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-email67',
+					code: '\\e03d'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-equalization3',
+					code: '\\e03e'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-equalizer26',
+					code: '\\e03f'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-event6',
+					code: '\\e040'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-expand25',
+					code: '\\e041'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-expanding2',
+					code: '\\e042'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-fast33',
+					code: '\\e043'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-favourites5',
+					code: '\\e044'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-file68',
+					code: '\\e045'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-file69',
+					code: '\\e046'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-film57',
+					code: '\\e047'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-flag53',
+					code: '\\e048'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-fog10',
+					code: '\\e049'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-foggy3',
+					code: '\\e04a'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-folder173',
+					code: '\\e04b'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-fork34',
+					code: '\\e04c'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-four87',
+					code: '\\e04d'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-full40',
+					code: '\\e04e'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-games32',
+					code: '\\e04f'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-gear30',
+					code: '\\e050'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-giftbox54',
+					code: '\\e051'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-graphical8',
+					code: '\\e052'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-headphones32',
+					code: '\\e053'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-hot67',
+					code: '\\e054'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-images21',
+					code: '\\e055'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-ink12',
+					code: '\\e056'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-label25',
+					code: '\\e057'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-left144',
+					code: '\\e058'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-left145',
+					code: '\\e059'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-left146',
+					code: '\\e05a'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-left148',
+					code: '\\e05b'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-left152',
+					code: '\\e05c'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-left153',
+					code: '\\e05d'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-left158',
+					code: '\\e05e'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-left159',
+					code: '\\e05f'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-like51',
+					code: '\\e060'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-link52',
+					code: '\\e061'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-list63',
+					code: '\\e062'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-list65',
+					code: '\\e063'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-lock64',
+					code: '\\e064'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-login12',
+					code: '\\e065'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-login9',
+					code: '\\e066'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-map87',
+					code: '\\e067'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-megaphone11',
+					code: '\\e068'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-men25',
+					code: '\\e069'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-menu40',
+					code: '\\e06a'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-menu41',
+					code: '\\e06b'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-microphone76',
+					code: '\\e06c'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-microphone77',
+					code: '\\e06d'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-minus79',
+					code: '\\e06e'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-minus80',
+					code: '\\e06f'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-minus83',
+					code: '\\e070'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-minus86',
+					code: '\\e071'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-monitor74',
+					code: '\\e072'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-music218',
+					code: '\\e073'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-music219',
+					code: '\\e074'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-music221',
+					code: '\\e075'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-musical100',
+					code: '\\e076'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-musical98',
+					code: '\\e077'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-mute34',
+					code: '\\e078'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-new83',
+					code: '\\e079'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-nine16',
+					code: '\\e07a'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-note35',
+					code: '\\e07b'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-notebook41',
+					code: '\\e07c'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-notification4',
+					code: '\\e07d'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-notification5',
+					code: '\\e07e'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-opened25',
+					code: '\\e07f'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-oval34',
+					code: '\\e080'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-paintbrush9',
+					code: '\\e081'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-paper122',
+					code: '\\e082'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-pause37',
+					code: '\\e083'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-pencil85',
+					code: '\\e084'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-phone351',
+					code: '\\e085'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-photo181',
+					code: '\\e086'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-pin42',
+					code: '\\e087'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-planetary2',
+					code: '\\e088'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-play83',
+					code: '\\e089'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-portfolio23',
+					code: '\\e08a'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-print34',
+					code: '\\e08b'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-radio46',
+					code: '\\e08c'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-rain30',
+					code: '\\e08d'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-rectangular78',
+					code: '\\e08e'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-recycling10',
+					code: '\\e08f'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-rewind37',
+					code: '\\e090'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-right139',
+					code: '\\e091'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-right141',
+					code: '\\e092'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-right142',
+					code: '\\e093'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-right144',
+					code: '\\e094'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-right148',
+					code: '\\e095'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-right153',
+					code: '\\e096'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-right154',
+					code: '\\e097'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-right156',
+					code: '\\e098'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-rounded51',
+					code: '\\e099'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-sand14',
+					code: '\\e09a'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-save15',
+					code: '\\e09b'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-search74',
+					code: '\\e09c'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-search78',
+					code: '\\e09d'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-share27',
+					code: '\\e09e'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-shopping198',
+					code: '\\e09f'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-shopping199',
+					code: '\\e0a0'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-shopping202',
+					code: '\\e0a1'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-shopping204',
+					code: '\\e0a2'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-shuffle17',
+					code: '\\e0a3'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-sort47',
+					code: '\\e0a4'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-sort48',
+					code: '\\e0a5'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-speaker75',
+					code: '\\e0a6'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-speaker80',
+					code: '\\e0a7'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-speaker81',
+					code: '\\e0a8'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-speaker86',
+					code: '\\e0a9'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-speaker87',
+					code: '\\e0aa'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-speech96',
+					code: '\\e0ab'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-square152',
+					code: '\\e0ac'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-square156',
+					code: '\\e0ad'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-square160',
+					code: '\\e0ae'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-store10',
+					code: '\\e0af'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-sun81',
+					code: '\\e0b0'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-sunrise3',
+					code: '\\e0b1'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-switch23',
+					code: '\\e0b2'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-switch24',
+					code: '\\e0b3'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-tag47',
+					code: '\\e0b4'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-television20',
+					code: '\\e0b5'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-text108',
+					code: '\\e0b6'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-text109',
+					code: '\\e0b7'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-three142',
+					code: '\\e0b8'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-timer35',
+					code: '\\e0b9'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-tool16',
+					code: '\\e0ba'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-triangle33',
+					code: '\\e0bb'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-trophy55',
+					code: '\\e0bc'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-two311',
+					code: '\\e0bd'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-two316',
+					code: '\\e0be'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-two317',
+					code: '\\e0bf'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-two319',
+					code: '\\e0c0'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-two323',
+					code: '\\e0c1'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-unlocked27',
+					code: '\\e0c2'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-up100',
+					code: '\\e0c3'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-up102',
+					code: '\\e0c4'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-up103',
+					code: '\\e0c5'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-up104',
+					code: '\\e0c6'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-up107',
+					code: '\\e0c7'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-up111',
+					code: '\\e0c8'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-up112',
+					code: '\\e0c9'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-up114',
+					code: '\\e0ca'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-up98',
+					code: '\\e0cb'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-up99',
+					code: '\\e0cc'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-upload91',
+					code: '\\e0cd'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-upload92',
+					code: '\\e0ce'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-upper8',
+					code: '\\e0cf'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-user143',
+					code: '\\e0d0'
+				})
+				+box-icon({
+					icon: 'fl-bigmug-line-user144',
+					code: '\\e0d1'
+				})
+	='\n'
+
+	// Page Footer
+	+footer-classic({})

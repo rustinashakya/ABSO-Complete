@@ -1,0 +1,5892 @@
+extends  ../_skeleton
+
+//- Includes
+include ../sections/_header-classic
+include ../sections/_footer-classic
+include ../components/_ui-thumbnail
+include ../components/_ui-box-icon
+
+block variables
+	- var activeCategory = 'pages'
+	- var pageName = 'MDI Icons'
+
+block page
+	// Page Header
+	+navbar-classic({
+		logo: logo.default
+	})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-1-195x164',
+				imgOriginal: 'project-1-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-2-195x164',
+				imgOriginal: 'project-2-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-3-195x164',
+				imgOriginal: 'project-3-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-4-195x164',
+				imgOriginal: 'project-4-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-5-195x164',
+				imgOriginal: 'project-5-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-6-195x164',
+				imgOriginal: 'project-6-1200x800-original'
+			})
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-typography'
+	})
+	='\n'
+
+	// MDI Icons
+	section.section.section-lg.bg-default.text-md-left
+		.container
+			h3.text-spacing-50.font-weight-bold MDI Icons
+			.row.row-10.gutters-10
+				+box-icon({
+					icon: 'mdi mdi-access-point',
+					code: '\\f101'
+				})
+				+box-icon({
+					icon: 'mdi mdi-access-point-network',
+					code: '\\f102'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account',
+					code: '\\f103'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-alert',
+					code: '\\f104'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-box',
+					code: '\\f105'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-box-outline',
+					code: '\\f106'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-check',
+					code: '\\f107'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-circle',
+					code: '\\f108'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-convert',
+					code: '\\f109'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-key',
+					code: '\\f10a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-location',
+					code: '\\f10b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-minus',
+					code: '\\f10c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-multiple',
+					code: '\\f10d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-multiple-outline',
+					code: '\\f10e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-multiple-plus',
+					code: '\\f10f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-network',
+					code: '\\f110'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-off',
+					code: '\\f111'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-outline',
+					code: '\\f112'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-plus',
+					code: '\\f113'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-remove',
+					code: '\\f114'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-search',
+					code: '\\f115'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-star',
+					code: '\\f116'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-star-variant',
+					code: '\\f117'
+				})
+				+box-icon({
+					icon: 'mdi mdi-account-switch',
+					code: '\\f118'
+				})
+				+box-icon({
+					icon: 'mdi mdi-adjust',
+					code: '\\f119'
+				})
+				+box-icon({
+					icon: 'mdi mdi-air-conditioner',
+					code: '\\f11a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-airballoon',
+					code: '\\f11b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-airplane',
+					code: '\\f11c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-airplane-off',
+					code: '\\f11d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-airplay',
+					code: '\\f11e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-alarm',
+					code: '\\f11f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-alarm-check',
+					code: '\\f120'
+				})
+				+box-icon({
+					icon: 'mdi mdi-alarm-multiple',
+					code: '\\f121'
+				})
+				+box-icon({
+					icon: 'mdi mdi-alarm-off',
+					code: '\\f122'
+				})
+				+box-icon({
+					icon: 'mdi mdi-alarm-plus',
+					code: '\\f123'
+				})
+				+box-icon({
+					icon: 'mdi mdi-album',
+					code: '\\f124'
+				})
+				+box-icon({
+					icon: 'mdi mdi-alert',
+					code: '\\f125'
+				})
+				+box-icon({
+					icon: 'mdi mdi-alert-box',
+					code: '\\f126'
+				})
+				+box-icon({
+					icon: 'mdi mdi-alert-circle',
+					code: '\\f127'
+				})
+				+box-icon({
+					icon: 'mdi mdi-alert-octagon',
+					code: '\\f128'
+				})
+				+box-icon({
+					icon: 'mdi mdi-alert-outline',
+					code: '\\f129'
+				})
+				+box-icon({
+					icon: 'mdi mdi-alpha',
+					code: '\\f12a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-alphabetical',
+					code: '\\f12b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-amazon',
+					code: '\\f12c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-amazon-clouddrive',
+					code: '\\f12d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ambulance',
+					code: '\\f12e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-anchor',
+					code: '\\f12f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-android',
+					code: '\\f130'
+				})
+				+box-icon({
+					icon: 'mdi mdi-android-debug-bridge',
+					code: '\\f131'
+				})
+				+box-icon({
+					icon: 'mdi mdi-android-studio',
+					code: '\\f132'
+				})
+				+box-icon({
+					icon: 'mdi mdi-apple',
+					code: '\\f133'
+				})
+				+box-icon({
+					icon: 'mdi mdi-apple-finder',
+					code: '\\f134'
+				})
+				+box-icon({
+					icon: 'mdi mdi-apple-ios',
+					code: '\\f135'
+				})
+				+box-icon({
+					icon: 'mdi mdi-apple-mobileme',
+					code: '\\f136'
+				})
+				+box-icon({
+					icon: 'mdi mdi-apple-safari',
+					code: '\\f137'
+				})
+				+box-icon({
+					icon: 'mdi mdi-appnet',
+					code: '\\f138'
+				})
+				+box-icon({
+					icon: 'mdi mdi-apps',
+					code: '\\f139'
+				})
+				+box-icon({
+					icon: 'mdi mdi-archive',
+					code: '\\f13a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrange-bring-forward',
+					code: '\\f13b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrange-bring-to-front',
+					code: '\\f13c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrange-send-backward',
+					code: '\\f13d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrange-send-to-back',
+					code: '\\f13e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-all',
+					code: '\\f13f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-bottom-drop-circle',
+					code: '\\f140'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-bottom-left',
+					code: '\\f141'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-bottom-right',
+					code: '\\f142'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-collapse',
+					code: '\\f143'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-down',
+					code: '\\f144'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-down-bold',
+					code: '\\f145'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-down-bold-circle',
+					code: '\\f146'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-down-bold-circle-outline',
+					code: '\\f147'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-down-bold-hexagon-outline',
+					code: '\\f148'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-expand',
+					code: '\\f149'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-left',
+					code: '\\f14a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-left-bold',
+					code: '\\f14b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-left-bold-circle',
+					code: '\\f14c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-left-bold-circle-outline',
+					code: '\\f14d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-left-bold-hexagon-outline',
+					code: '\\f14e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-right',
+					code: '\\f14f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-right-bold',
+					code: '\\f150'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-right-bold-circle',
+					code: '\\f151'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-right-bold-circle-outline',
+					code: '\\f152'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-right-bold-hexagon-outline',
+					code: '\\f153'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-top-left',
+					code: '\\f154'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-top-right',
+					code: '\\f155'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-up',
+					code: '\\f156'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-up-bold',
+					code: '\\f157'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-up-bold-circle',
+					code: '\\f158'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-up-bold-circle-outline',
+					code: '\\f159'
+				})
+				+box-icon({
+					icon: 'mdi mdi-arrow-up-bold-hexagon-outline',
+					code: '\\f15a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-assistant',
+					code: '\\f15b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-at',
+					code: '\\f15c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-attachment',
+					code: '\\f15d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-audiobook',
+					code: '\\f15e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-auto-fix',
+					code: '\\f15f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-auto-upload',
+					code: '\\f160'
+				})
+				+box-icon({
+					icon: 'mdi mdi-autorenew',
+					code: '\\f161'
+				})
+				+box-icon({
+					icon: 'mdi mdi-av-timer',
+					code: '\\f162'
+				})
+				+box-icon({
+					icon: 'mdi mdi-baby',
+					code: '\\f163'
+				})
+				+box-icon({
+					icon: 'mdi mdi-backburger',
+					code: '\\f164'
+				})
+				+box-icon({
+					icon: 'mdi mdi-backspace',
+					code: '\\f165'
+				})
+				+box-icon({
+					icon: 'mdi mdi-backup-restore',
+					code: '\\f166'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bank',
+					code: '\\f167'
+				})
+				+box-icon({
+					icon: 'mdi mdi-barcode',
+					code: '\\f168'
+				})
+				+box-icon({
+					icon: 'mdi mdi-barcode-scan',
+					code: '\\f169'
+				})
+				+box-icon({
+					icon: 'mdi mdi-barley',
+					code: '\\f16a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-barrel',
+					code: '\\f16b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-basecamp',
+					code: '\\f16c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-basket',
+					code: '\\f16d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-basket-fill',
+					code: '\\f16e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-basket-unfill',
+					code: '\\f16f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery',
+					code: '\\f170'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-10',
+					code: '\\f171'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-20',
+					code: '\\f172'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-30',
+					code: '\\f173'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-40',
+					code: '\\f174'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-50',
+					code: '\\f175'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-60',
+					code: '\\f176'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-70',
+					code: '\\f177'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-80',
+					code: '\\f178'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-90',
+					code: '\\f179'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-alert',
+					code: '\\f17a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-charging',
+					code: '\\f17b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-charging-100',
+					code: '\\f17c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-charging-20',
+					code: '\\f17d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-charging-30',
+					code: '\\f17e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-charging-40',
+					code: '\\f17f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-charging-60',
+					code: '\\f180'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-charging-80',
+					code: '\\f181'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-charging-90',
+					code: '\\f182'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-minus',
+					code: '\\f183'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-negative',
+					code: '\\f184'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-outline',
+					code: '\\f185'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-plus',
+					code: '\\f186'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-positive',
+					code: '\\f187'
+				})
+				+box-icon({
+					icon: 'mdi mdi-battery-unknown',
+					code: '\\f188'
+				})
+				+box-icon({
+					icon: 'mdi mdi-beach',
+					code: '\\f189'
+				})
+				+box-icon({
+					icon: 'mdi mdi-beaker',
+					code: '\\f18a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-beaker-empty',
+					code: '\\f18b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-beaker-empty-outline',
+					code: '\\f18c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-beaker-outline',
+					code: '\\f18d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-beats',
+					code: '\\f18e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-beer',
+					code: '\\f18f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-behance',
+					code: '\\f190'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bell',
+					code: '\\f191'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bell-off',
+					code: '\\f192'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bell-outline',
+					code: '\\f193'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bell-plus',
+					code: '\\f194'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bell-ring',
+					code: '\\f195'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bell-ring-outline',
+					code: '\\f196'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bell-sleep',
+					code: '\\f197'
+				})
+				+box-icon({
+					icon: 'mdi mdi-beta',
+					code: '\\f198'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bike',
+					code: '\\f199'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bing',
+					code: '\\f19a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-binoculars',
+					code: '\\f19b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bio',
+					code: '\\f19c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-biohazard',
+					code: '\\f19d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bitbucket',
+					code: '\\f19e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-black-mesa',
+					code: '\\f19f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-blackberry',
+					code: '\\f1a0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-blender',
+					code: '\\f1a1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-blinds',
+					code: '\\f1a2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-block-helper',
+					code: '\\f1a3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-blogger',
+					code: '\\f1a4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bluetooth',
+					code: '\\f1a5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bluetooth-audio',
+					code: '\\f1a6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bluetooth-connect',
+					code: '\\f1a7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bluetooth-off',
+					code: '\\f1a8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bluetooth-settings',
+					code: '\\f1a9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bluetooth-transfer',
+					code: '\\f1aa'
+				})
+				+box-icon({
+					icon: 'mdi mdi-blur',
+					code: '\\f1ab'
+				})
+				+box-icon({
+					icon: 'mdi mdi-blur-linear',
+					code: '\\f1ac'
+				})
+				+box-icon({
+					icon: 'mdi mdi-blur-off',
+					code: '\\f1ad'
+				})
+				+box-icon({
+					icon: 'mdi mdi-blur-radial',
+					code: '\\f1ae'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bone',
+					code: '\\f1af'
+				})
+				+box-icon({
+					icon: 'mdi mdi-book',
+					code: '\\f1b0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-book-multiple',
+					code: '\\f1b1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-book-multiple-variant',
+					code: '\\f1b2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-book-open',
+					code: '\\f1b3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-book-open-variant',
+					code: '\\f1b4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-book-variant',
+					code: '\\f1b5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bookmark',
+					code: '\\f1b6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bookmark-check',
+					code: '\\f1b7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bookmark-music',
+					code: '\\f1b8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bookmark-outline',
+					code: '\\f1b9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bookmark-outline-plus',
+					code: '\\f1ba'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bookmark-plus',
+					code: '\\f1bb'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bookmark-remove',
+					code: '\\f1bc'
+				})
+				+box-icon({
+					icon: 'mdi mdi-border-all',
+					code: '\\f1bd'
+				})
+				+box-icon({
+					icon: 'mdi mdi-border-bottom',
+					code: '\\f1be'
+				})
+				+box-icon({
+					icon: 'mdi mdi-border-color',
+					code: '\\f1bf'
+				})
+				+box-icon({
+					icon: 'mdi mdi-border-horizontal',
+					code: '\\f1c0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-border-inside',
+					code: '\\f1c1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-border-left',
+					code: '\\f1c2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-border-none',
+					code: '\\f1c3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-border-outside',
+					code: '\\f1c4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-border-right',
+					code: '\\f1c5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-border-style',
+					code: '\\f1c6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-border-top',
+					code: '\\f1c7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-border-vertical',
+					code: '\\f1c8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bowling',
+					code: '\\f1c9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-box',
+					code: '\\f1ca'
+				})
+				+box-icon({
+					icon: 'mdi mdi-box-cutter',
+					code: '\\f1cb'
+				})
+				+box-icon({
+					icon: 'mdi mdi-briefcase',
+					code: '\\f1cc'
+				})
+				+box-icon({
+					icon: 'mdi mdi-briefcase-check',
+					code: '\\f1cd'
+				})
+				+box-icon({
+					icon: 'mdi mdi-briefcase-download',
+					code: '\\f1ce'
+				})
+				+box-icon({
+					icon: 'mdi mdi-briefcase-upload',
+					code: '\\f1cf'
+				})
+				+box-icon({
+					icon: 'mdi mdi-brightness-1',
+					code: '\\f1d0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-brightness-2',
+					code: '\\f1d1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-brightness-3',
+					code: '\\f1d2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-brightness-4',
+					code: '\\f1d3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-brightness-5',
+					code: '\\f1d4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-brightness-6',
+					code: '\\f1d5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-brightness-7',
+					code: '\\f1d6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-brightness-auto',
+					code: '\\f1d7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-broom',
+					code: '\\f1d8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-brush',
+					code: '\\f1d9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bug',
+					code: '\\f1da'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bulletin-board',
+					code: '\\f1db'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bullhorn',
+					code: '\\f1dc'
+				})
+				+box-icon({
+					icon: 'mdi mdi-bus',
+					code: '\\f1dd'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cached',
+					code: '\\f1de'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cake',
+					code: '\\f1df'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cake-layered',
+					code: '\\f1e0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cake-variant',
+					code: '\\f1e1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-calculator',
+					code: '\\f1e2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-calendar',
+					code: '\\f1e3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-calendar-blank',
+					code: '\\f1e4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-calendar-check',
+					code: '\\f1e5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-calendar-clock',
+					code: '\\f1e6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-calendar-multiple',
+					code: '\\f1e7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-calendar-multiple-check',
+					code: '\\f1e8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-calendar-plus',
+					code: '\\f1e9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-calendar-remove',
+					code: '\\f1ea'
+				})
+				+box-icon({
+					icon: 'mdi mdi-calendar-text',
+					code: '\\f1eb'
+				})
+				+box-icon({
+					icon: 'mdi mdi-calendar-today',
+					code: '\\f1ec'
+				})
+				+box-icon({
+					icon: 'mdi mdi-call-made',
+					code: '\\f1ed'
+				})
+				+box-icon({
+					icon: 'mdi mdi-call-merge',
+					code: '\\f1ee'
+				})
+				+box-icon({
+					icon: 'mdi mdi-call-missed',
+					code: '\\f1ef'
+				})
+				+box-icon({
+					icon: 'mdi mdi-call-received',
+					code: '\\f1f0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-call-split',
+					code: '\\f1f1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-camcorder',
+					code: '\\f1f2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-camcorder-box',
+					code: '\\f1f3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-camcorder-box-off',
+					code: '\\f1f4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-camcorder-off',
+					code: '\\f1f5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-camera',
+					code: '\\f1f6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-camera-enhance',
+					code: '\\f1f7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-camera-front',
+					code: '\\f1f8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-camera-front-variant',
+					code: '\\f1f9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-camera-iris',
+					code: '\\f1fa'
+				})
+				+box-icon({
+					icon: 'mdi mdi-camera-party-mode',
+					code: '\\f1fb'
+				})
+				+box-icon({
+					icon: 'mdi mdi-camera-rear',
+					code: '\\f1fc'
+				})
+				+box-icon({
+					icon: 'mdi mdi-camera-rear-variant',
+					code: '\\f1fd'
+				})
+				+box-icon({
+					icon: 'mdi mdi-camera-switch',
+					code: '\\f1fe'
+				})
+				+box-icon({
+					icon: 'mdi mdi-camera-timer',
+					code: '\\f1ff'
+				})
+				+box-icon({
+					icon: 'mdi mdi-candycane',
+					code: '\\f200'
+				})
+				+box-icon({
+					icon: 'mdi mdi-car',
+					code: '\\f201'
+				})
+				+box-icon({
+					icon: 'mdi mdi-car-battery',
+					code: '\\f202'
+				})
+				+box-icon({
+					icon: 'mdi mdi-car-connected',
+					code: '\\f203'
+				})
+				+box-icon({
+					icon: 'mdi mdi-car-wash',
+					code: '\\f204'
+				})
+				+box-icon({
+					icon: 'mdi mdi-carrot',
+					code: '\\f205'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cart',
+					code: '\\f206'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cart-outline',
+					code: '\\f207'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cart-plus',
+					code: '\\f208'
+				})
+				+box-icon({
+					icon: 'mdi mdi-case-sensitive-alt',
+					code: '\\f209'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cash',
+					code: '\\f20a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cash-100',
+					code: '\\f20b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cash-multiple',
+					code: '\\f20c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cash-usd',
+					code: '\\f20d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cast',
+					code: '\\f20e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cast-connected',
+					code: '\\f20f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-castle',
+					code: '\\f210'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cat',
+					code: '\\f211'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cellphone',
+					code: '\\f212'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cellphone-android',
+					code: '\\f213'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cellphone-basic',
+					code: '\\f214'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cellphone-dock',
+					code: '\\f215'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cellphone-iphone',
+					code: '\\f216'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cellphone-link',
+					code: '\\f217'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cellphone-link-off',
+					code: '\\f218'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cellphone-settings',
+					code: '\\f219'
+				})
+				+box-icon({
+					icon: 'mdi mdi-certificate',
+					code: '\\f21a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-chair-school',
+					code: '\\f21b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-chart-arc',
+					code: '\\f21c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-chart-areaspline',
+					code: '\\f21d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-chart-bar',
+					code: '\\f21e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-chart-histogram',
+					code: '\\f21f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-chart-line',
+					code: '\\f220'
+				})
+				+box-icon({
+					icon: 'mdi mdi-chart-pie',
+					code: '\\f221'
+				})
+				+box-icon({
+					icon: 'mdi mdi-check',
+					code: '\\f222'
+				})
+				+box-icon({
+					icon: 'mdi mdi-check-all',
+					code: '\\f223'
+				})
+				+box-icon({
+					icon: 'mdi mdi-checkbox-blank',
+					code: '\\f224'
+				})
+				+box-icon({
+					icon: 'mdi mdi-checkbox-blank-circle',
+					code: '\\f225'
+				})
+				+box-icon({
+					icon: 'mdi mdi-checkbox-blank-circle-outline',
+					code: '\\f226'
+				})
+				+box-icon({
+					icon: 'mdi mdi-checkbox-blank-outline',
+					code: '\\f227'
+				})
+				+box-icon({
+					icon: 'mdi mdi-checkbox-marked',
+					code: '\\f228'
+				})
+				+box-icon({
+					icon: 'mdi mdi-checkbox-marked-circle',
+					code: '\\f229'
+				})
+				+box-icon({
+					icon: 'mdi mdi-checkbox-marked-circle-outline',
+					code: '\\f22a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-checkbox-marked-outline',
+					code: '\\f22b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-checkbox-multiple-blank',
+					code: '\\f22c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-checkbox-multiple-blank-outline',
+					code: '\\f22d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-checkbox-multiple-marked',
+					code: '\\f22e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-checkbox-multiple-marked-outline',
+					code: '\\f22f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-checkerboard',
+					code: '\\f230'
+				})
+				+box-icon({
+					icon: 'mdi mdi-chemical-weapon',
+					code: '\\f231'
+				})
+				+box-icon({
+					icon: 'mdi mdi-chevron-double-down',
+					code: '\\f232'
+				})
+				+box-icon({
+					icon: 'mdi mdi-chevron-double-left',
+					code: '\\f233'
+				})
+				+box-icon({
+					icon: 'mdi mdi-chevron-double-right',
+					code: '\\f234'
+				})
+				+box-icon({
+					icon: 'mdi mdi-chevron-double-up',
+					code: '\\f235'
+				})
+				+box-icon({
+					icon: 'mdi mdi-chevron-down',
+					code: '\\f236'
+				})
+				+box-icon({
+					icon: 'mdi mdi-chevron-left',
+					code: '\\f237'
+				})
+				+box-icon({
+					icon: 'mdi mdi-chevron-right',
+					code: '\\f238'
+				})
+				+box-icon({
+					icon: 'mdi mdi-chevron-up',
+					code: '\\f239'
+				})
+				+box-icon({
+					icon: 'mdi mdi-church',
+					code: '\\f23a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cisco-webex',
+					code: '\\f23b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-city',
+					code: '\\f23c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-clipboard',
+					code: '\\f23d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-clipboard-account',
+					code: '\\f23e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-clipboard-alert',
+					code: '\\f23f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-clipboard-arrow-down',
+					code: '\\f240'
+				})
+				+box-icon({
+					icon: 'mdi mdi-clipboard-arrow-left',
+					code: '\\f241'
+				})
+				+box-icon({
+					icon: 'mdi mdi-clipboard-check',
+					code: '\\f242'
+				})
+				+box-icon({
+					icon: 'mdi mdi-clipboard-outline',
+					code: '\\f243'
+				})
+				+box-icon({
+					icon: 'mdi mdi-clipboard-text',
+					code: '\\f244'
+				})
+				+box-icon({
+					icon: 'mdi mdi-clippy',
+					code: '\\f245'
+				})
+				+box-icon({
+					icon: 'mdi mdi-clock',
+					code: '\\f246'
+				})
+				+box-icon({
+					icon: 'mdi mdi-clock-end',
+					code: '\\f247'
+				})
+				+box-icon({
+					icon: 'mdi mdi-clock-fast',
+					code: '\\f248'
+				})
+				+box-icon({
+					icon: 'mdi mdi-clock-in',
+					code: '\\f249'
+				})
+				+box-icon({
+					icon: 'mdi mdi-clock-out',
+					code: '\\f24a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-clock-start',
+					code: '\\f24b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-close',
+					code: '\\f24c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-close-box',
+					code: '\\f24d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-close-box-outline',
+					code: '\\f24e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-close-circle',
+					code: '\\f24f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-close-circle-outline',
+					code: '\\f250'
+				})
+				+box-icon({
+					icon: 'mdi mdi-close-network',
+					code: '\\f251'
+				})
+				+box-icon({
+					icon: 'mdi mdi-close-octagon',
+					code: '\\f252'
+				})
+				+box-icon({
+					icon: 'mdi mdi-close-octagon-outline',
+					code: '\\f253'
+				})
+				+box-icon({
+					icon: 'mdi mdi-closed-caption',
+					code: '\\f254'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cloud',
+					code: '\\f255'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cloud-check',
+					code: '\\f256'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cloud-circle',
+					code: '\\f257'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cloud-download',
+					code: '\\f258'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cloud-outline',
+					code: '\\f259'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cloud-outline-off',
+					code: '\\f25a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cloud-print',
+					code: '\\f25b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cloud-print-outline',
+					code: '\\f25c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cloud-upload',
+					code: '\\f25d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-code-array',
+					code: '\\f25e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-code-braces',
+					code: '\\f25f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-code-brackets',
+					code: '\\f260'
+				})
+				+box-icon({
+					icon: 'mdi mdi-code-equal',
+					code: '\\f261'
+				})
+				+box-icon({
+					icon: 'mdi mdi-code-greater-than',
+					code: '\\f262'
+				})
+				+box-icon({
+					icon: 'mdi mdi-code-greater-than-or-equal',
+					code: '\\f263'
+				})
+				+box-icon({
+					icon: 'mdi mdi-code-less-than',
+					code: '\\f264'
+				})
+				+box-icon({
+					icon: 'mdi mdi-code-less-than-or-equal',
+					code: '\\f265'
+				})
+				+box-icon({
+					icon: 'mdi mdi-code-not-equal',
+					code: '\\f266'
+				})
+				+box-icon({
+					icon: 'mdi mdi-code-not-equal-variant',
+					code: '\\f267'
+				})
+				+box-icon({
+					icon: 'mdi mdi-code-parentheses',
+					code: '\\f268'
+				})
+				+box-icon({
+					icon: 'mdi mdi-code-string',
+					code: '\\f269'
+				})
+				+box-icon({
+					icon: 'mdi mdi-code-tags',
+					code: '\\f26a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-codepen',
+					code: '\\f26b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-coffee',
+					code: '\\f26c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-coffee-to-go',
+					code: '\\f26d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-coin',
+					code: '\\f26e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-color-helper',
+					code: '\\f26f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-comment',
+					code: '\\f270'
+				})
+				+box-icon({
+					icon: 'mdi mdi-comment-account',
+					code: '\\f271'
+				})
+				+box-icon({
+					icon: 'mdi mdi-comment-account-outline',
+					code: '\\f272'
+				})
+				+box-icon({
+					icon: 'mdi mdi-comment-alert',
+					code: '\\f273'
+				})
+				+box-icon({
+					icon: 'mdi mdi-comment-alert-outline',
+					code: '\\f274'
+				})
+				+box-icon({
+					icon: 'mdi mdi-comment-check',
+					code: '\\f275'
+				})
+				+box-icon({
+					icon: 'mdi mdi-comment-check-outline',
+					code: '\\f276'
+				})
+				+box-icon({
+					icon: 'mdi mdi-comment-multiple-outline',
+					code: '\\f277'
+				})
+				+box-icon({
+					icon: 'mdi mdi-comment-outline',
+					code: '\\f278'
+				})
+				+box-icon({
+					icon: 'mdi mdi-comment-plus-outline',
+					code: '\\f279'
+				})
+				+box-icon({
+					icon: 'mdi mdi-comment-processing',
+					code: '\\f27a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-comment-processing-outline',
+					code: '\\f27b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-comment-question-outline',
+					code: '\\f27c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-comment-remove-outline',
+					code: '\\f27d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-comment-text',
+					code: '\\f27e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-comment-text-outline',
+					code: '\\f27f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-compare',
+					code: '\\f280'
+				})
+				+box-icon({
+					icon: 'mdi mdi-compass',
+					code: '\\f281'
+				})
+				+box-icon({
+					icon: 'mdi mdi-compass-outline',
+					code: '\\f282'
+				})
+				+box-icon({
+					icon: 'mdi mdi-console',
+					code: '\\f283'
+				})
+				+box-icon({
+					icon: 'mdi mdi-contact-mail',
+					code: '\\f284'
+				})
+				+box-icon({
+					icon: 'mdi mdi-content-copy',
+					code: '\\f285'
+				})
+				+box-icon({
+					icon: 'mdi mdi-content-cut',
+					code: '\\f286'
+				})
+				+box-icon({
+					icon: 'mdi mdi-content-duplicate',
+					code: '\\f287'
+				})
+				+box-icon({
+					icon: 'mdi mdi-content-paste',
+					code: '\\f288'
+				})
+				+box-icon({
+					icon: 'mdi mdi-content-save',
+					code: '\\f289'
+				})
+				+box-icon({
+					icon: 'mdi mdi-content-save-all',
+					code: '\\f28a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-contrast',
+					code: '\\f28b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-contrast-box',
+					code: '\\f28c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-contrast-circle',
+					code: '\\f28d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cookie',
+					code: '\\f28e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cow',
+					code: '\\f28f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-credit-card',
+					code: '\\f290'
+				})
+				+box-icon({
+					icon: 'mdi mdi-credit-card-multiple',
+					code: '\\f291'
+				})
+				+box-icon({
+					icon: 'mdi mdi-credit-card-scan',
+					code: '\\f292'
+				})
+				+box-icon({
+					icon: 'mdi mdi-crop',
+					code: '\\f293'
+				})
+				+box-icon({
+					icon: 'mdi mdi-crop-free',
+					code: '\\f294'
+				})
+				+box-icon({
+					icon: 'mdi mdi-crop-landscape',
+					code: '\\f295'
+				})
+				+box-icon({
+					icon: 'mdi mdi-crop-portrait',
+					code: '\\f296'
+				})
+				+box-icon({
+					icon: 'mdi mdi-crop-square',
+					code: '\\f297'
+				})
+				+box-icon({
+					icon: 'mdi mdi-crosshairs',
+					code: '\\f298'
+				})
+				+box-icon({
+					icon: 'mdi mdi-crosshairs-gps',
+					code: '\\f299'
+				})
+				+box-icon({
+					icon: 'mdi mdi-crown',
+					code: '\\f29a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cube',
+					code: '\\f29b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cube-outline',
+					code: '\\f29c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cube-send',
+					code: '\\f29d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cube-unfolded',
+					code: '\\f29e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cup',
+					code: '\\f29f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cup-water',
+					code: '\\f2a0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-currency-btc',
+					code: '\\f2a1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-currency-eur',
+					code: '\\f2a2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-currency-gbp',
+					code: '\\f2a3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-currency-inr',
+					code: '\\f2a4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-currency-ngn',
+					code: '\\f2a5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-currency-rub',
+					code: '\\f2a6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-currency-try',
+					code: '\\f2a7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-currency-usd',
+					code: '\\f2a8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cursor-default',
+					code: '\\f2a9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cursor-default-outline',
+					code: '\\f2aa'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cursor-move',
+					code: '\\f2ab'
+				})
+				+box-icon({
+					icon: 'mdi mdi-cursor-pointer',
+					code: '\\f2ac'
+				})
+				+box-icon({
+					icon: 'mdi mdi-database',
+					code: '\\f2ad'
+				})
+				+box-icon({
+					icon: 'mdi mdi-database-minus',
+					code: '\\f2ae'
+				})
+				+box-icon({
+					icon: 'mdi mdi-database-plus',
+					code: '\\f2af'
+				})
+				+box-icon({
+					icon: 'mdi mdi-debug-step-into',
+					code: '\\f2b0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-debug-step-out',
+					code: '\\f2b1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-debug-step-over',
+					code: '\\f2b2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-decimal-decrease',
+					code: '\\f2b3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-decimal-increase',
+					code: '\\f2b4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-delete',
+					code: '\\f2b5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-delete-variant',
+					code: '\\f2b6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-delta',
+					code: '\\f2b7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-deskphone',
+					code: '\\f2b8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-desktop-mac',
+					code: '\\f2b9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-desktop-tower',
+					code: '\\f2ba'
+				})
+				+box-icon({
+					icon: 'mdi mdi-details',
+					code: '\\f2bb'
+				})
+				+box-icon({
+					icon: 'mdi mdi-deviantart',
+					code: '\\f2bc'
+				})
+				+box-icon({
+					icon: 'mdi mdi-diamond',
+					code: '\\f2bd'
+				})
+				+box-icon({
+					icon: 'mdi mdi-dice',
+					code: '\\f2be'
+				})
+				+box-icon({
+					icon: 'mdi mdi-dice-1',
+					code: '\\f2bf'
+				})
+				+box-icon({
+					icon: 'mdi mdi-dice-2',
+					code: '\\f2c0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-dice-3',
+					code: '\\f2c1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-dice-4',
+					code: '\\f2c2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-dice-5',
+					code: '\\f2c3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-dice-6',
+					code: '\\f2c4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-directions',
+					code: '\\f2c5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-disk-alert',
+					code: '\\f2c6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-disqus',
+					code: '\\f2c7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-disqus-outline',
+					code: '\\f2c8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-division',
+					code: '\\f2c9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-division-box',
+					code: '\\f2ca'
+				})
+				+box-icon({
+					icon: 'mdi mdi-dns',
+					code: '\\f2cb'
+				})
+				+box-icon({
+					icon: 'mdi mdi-domain',
+					code: '\\f2cc'
+				})
+				+box-icon({
+					icon: 'mdi mdi-dots-horizontal',
+					code: '\\f2cd'
+				})
+				+box-icon({
+					icon: 'mdi mdi-dots-vertical',
+					code: '\\f2ce'
+				})
+				+box-icon({
+					icon: 'mdi mdi-download',
+					code: '\\f2cf'
+				})
+				+box-icon({
+					icon: 'mdi mdi-drag',
+					code: '\\f2d0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-drag-horizontal',
+					code: '\\f2d1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-drag-vertical',
+					code: '\\f2d2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-drawing',
+					code: '\\f2d3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-drawing-box',
+					code: '\\f2d4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-dribbble',
+					code: '\\f2d5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-dribbble-box',
+					code: '\\f2d6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-drone',
+					code: '\\f2d7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-dropbox',
+					code: '\\f2d8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-drupal',
+					code: '\\f2d9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-duck',
+					code: '\\f2da'
+				})
+				+box-icon({
+					icon: 'mdi mdi-dumbbell',
+					code: '\\f2db'
+				})
+				+box-icon({
+					icon: 'mdi mdi-earth',
+					code: '\\f2dc'
+				})
+				+box-icon({
+					icon: 'mdi mdi-earth-off',
+					code: '\\f2dd'
+				})
+				+box-icon({
+					icon: 'mdi mdi-edge',
+					code: '\\f2de'
+				})
+				+box-icon({
+					icon: 'mdi mdi-eject',
+					code: '\\f2df'
+				})
+				+box-icon({
+					icon: 'mdi mdi-elevation-decline',
+					code: '\\f2e0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-elevation-rise',
+					code: '\\f2e1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-elevator',
+					code: '\\f2e2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-email',
+					code: '\\f2e3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-email-open',
+					code: '\\f2e4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-email-outline',
+					code: '\\f2e5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-email-secure',
+					code: '\\f2e6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-emoticon',
+					code: '\\f2e7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-emoticon-cool',
+					code: '\\f2e8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-emoticon-devil',
+					code: '\\f2e9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-emoticon-happy',
+					code: '\\f2ea'
+				})
+				+box-icon({
+					icon: 'mdi mdi-emoticon-neutral',
+					code: '\\f2eb'
+				})
+				+box-icon({
+					icon: 'mdi mdi-emoticon-poop',
+					code: '\\f2ec'
+				})
+				+box-icon({
+					icon: 'mdi mdi-emoticon-sad',
+					code: '\\f2ed'
+				})
+				+box-icon({
+					icon: 'mdi mdi-emoticon-tongue',
+					code: '\\f2ee'
+				})
+				+box-icon({
+					icon: 'mdi mdi-engine',
+					code: '\\f2ef'
+				})
+				+box-icon({
+					icon: 'mdi mdi-engine-outline',
+					code: '\\f2f0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-equal',
+					code: '\\f2f1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-equal-box',
+					code: '\\f2f2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-eraser',
+					code: '\\f2f3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-escalator',
+					code: '\\f2f4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ethernet',
+					code: '\\f2f5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ethernet-cable',
+					code: '\\f2f6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ethernet-cable-off',
+					code: '\\f2f7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-etsy',
+					code: '\\f2f8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-evernote',
+					code: '\\f2f9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-exclamation',
+					code: '\\f2fa'
+				})
+				+box-icon({
+					icon: 'mdi mdi-exit-to-app',
+					code: '\\f2fb'
+				})
+				+box-icon({
+					icon: 'mdi mdi-export',
+					code: '\\f2fc'
+				})
+				+box-icon({
+					icon: 'mdi mdi-eye',
+					code: '\\f2fd'
+				})
+				+box-icon({
+					icon: 'mdi mdi-eye-off',
+					code: '\\f2fe'
+				})
+				+box-icon({
+					icon: 'mdi mdi-eyedropper',
+					code: '\\f2ff'
+				})
+				+box-icon({
+					icon: 'mdi mdi-eyedropper-variant',
+					code: '\\f300'
+				})
+				+box-icon({
+					icon: 'mdi mdi-facebook',
+					code: '\\f301'
+				})
+				+box-icon({
+					icon: 'mdi mdi-facebook-box',
+					code: '\\f302'
+				})
+				+box-icon({
+					icon: 'mdi mdi-facebook-messenger',
+					code: '\\f303'
+				})
+				+box-icon({
+					icon: 'mdi mdi-factory',
+					code: '\\f304'
+				})
+				+box-icon({
+					icon: 'mdi mdi-fan',
+					code: '\\f305'
+				})
+				+box-icon({
+					icon: 'mdi mdi-fast-forward',
+					code: '\\f306'
+				})
+				+box-icon({
+					icon: 'mdi mdi-fax',
+					code: '\\f307'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ferry',
+					code: '\\f308'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file',
+					code: '\\f309'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-chart',
+					code: '\\f30a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-check',
+					code: '\\f30b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-cloud',
+					code: '\\f30c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-delimited',
+					code: '\\f30d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-document',
+					code: '\\f30e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-document-box',
+					code: '\\f30f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-excel',
+					code: '\\f310'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-excel-box',
+					code: '\\f311'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-export',
+					code: '\\f312'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-find',
+					code: '\\f313'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-image',
+					code: '\\f314'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-import',
+					code: '\\f315'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-lock',
+					code: '\\f316'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-multiple',
+					code: '\\f317'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-music',
+					code: '\\f318'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-outline',
+					code: '\\f319'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-pdf',
+					code: '\\f31a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-pdf-box',
+					code: '\\f31b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-powerpoint',
+					code: '\\f31c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-powerpoint-box',
+					code: '\\f31d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-presentation-box',
+					code: '\\f31e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-send',
+					code: '\\f31f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-video',
+					code: '\\f320'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-word',
+					code: '\\f321'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-word-box',
+					code: '\\f322'
+				})
+				+box-icon({
+					icon: 'mdi mdi-file-xml',
+					code: '\\f323'
+				})
+				+box-icon({
+					icon: 'mdi mdi-film',
+					code: '\\f324'
+				})
+				+box-icon({
+					icon: 'mdi mdi-filmstrip',
+					code: '\\f325'
+				})
+				+box-icon({
+					icon: 'mdi mdi-filmstrip-off',
+					code: '\\f326'
+				})
+				+box-icon({
+					icon: 'mdi mdi-filter',
+					code: '\\f327'
+				})
+				+box-icon({
+					icon: 'mdi mdi-filter-outline',
+					code: '\\f328'
+				})
+				+box-icon({
+					icon: 'mdi mdi-filter-remove',
+					code: '\\f329'
+				})
+				+box-icon({
+					icon: 'mdi mdi-filter-remove-outline',
+					code: '\\f32a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-filter-variant',
+					code: '\\f32b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-fingerprint',
+					code: '\\f32c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-fire',
+					code: '\\f32d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-firefox',
+					code: '\\f32e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-fish',
+					code: '\\f32f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-flag',
+					code: '\\f330'
+				})
+				+box-icon({
+					icon: 'mdi mdi-flag-checkered',
+					code: '\\f331'
+				})
+				+box-icon({
+					icon: 'mdi mdi-flag-outline',
+					code: '\\f332'
+				})
+				+box-icon({
+					icon: 'mdi mdi-flag-outline-variant',
+					code: '\\f333'
+				})
+				+box-icon({
+					icon: 'mdi mdi-flag-triangle',
+					code: '\\f334'
+				})
+				+box-icon({
+					icon: 'mdi mdi-flag-variant',
+					code: '\\f335'
+				})
+				+box-icon({
+					icon: 'mdi mdi-flash',
+					code: '\\f336'
+				})
+				+box-icon({
+					icon: 'mdi mdi-flash-auto',
+					code: '\\f337'
+				})
+				+box-icon({
+					icon: 'mdi mdi-flash-off',
+					code: '\\f338'
+				})
+				+box-icon({
+					icon: 'mdi mdi-flashlight',
+					code: '\\f339'
+				})
+				+box-icon({
+					icon: 'mdi mdi-flashlight-off',
+					code: '\\f33a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-flattr',
+					code: '\\f33b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-flip-to-back',
+					code: '\\f33c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-flip-to-front',
+					code: '\\f33d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-floppy',
+					code: '\\f33e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-flower',
+					code: '\\f33f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-folder',
+					code: '\\f340'
+				})
+				+box-icon({
+					icon: 'mdi mdi-folder-account',
+					code: '\\f341'
+				})
+				+box-icon({
+					icon: 'mdi mdi-folder-download',
+					code: '\\f342'
+				})
+				+box-icon({
+					icon: 'mdi mdi-folder-google-drive',
+					code: '\\f343'
+				})
+				+box-icon({
+					icon: 'mdi mdi-folder-image',
+					code: '\\f344'
+				})
+				+box-icon({
+					icon: 'mdi mdi-folder-lock',
+					code: '\\f345'
+				})
+				+box-icon({
+					icon: 'mdi mdi-folder-lock-open',
+					code: '\\f346'
+				})
+				+box-icon({
+					icon: 'mdi mdi-folder-move',
+					code: '\\f347'
+				})
+				+box-icon({
+					icon: 'mdi mdi-folder-multiple',
+					code: '\\f348'
+				})
+				+box-icon({
+					icon: 'mdi mdi-folder-multiple-image',
+					code: '\\f349'
+				})
+				+box-icon({
+					icon: 'mdi mdi-folder-multiple-outline',
+					code: '\\f34a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-folder-outline',
+					code: '\\f34b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-folder-plus',
+					code: '\\f34c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-folder-remove',
+					code: '\\f34d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-folder-upload',
+					code: '\\f34e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-food',
+					code: '\\f34f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-food-apple',
+					code: '\\f350'
+				})
+				+box-icon({
+					icon: 'mdi mdi-food-variant',
+					code: '\\f351'
+				})
+				+box-icon({
+					icon: 'mdi mdi-football',
+					code: '\\f352'
+				})
+				+box-icon({
+					icon: 'mdi mdi-football-australian',
+					code: '\\f353'
+				})
+				+box-icon({
+					icon: 'mdi mdi-football-helmet',
+					code: '\\f354'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-align-center',
+					code: '\\f355'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-align-justify',
+					code: '\\f356'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-align-left',
+					code: '\\f357'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-align-right',
+					code: '\\f358'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-bold',
+					code: '\\f359'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-clear',
+					code: '\\f35a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-color-fill',
+					code: '\\f35b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-float-center',
+					code: '\\f35c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-float-left',
+					code: '\\f35d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-float-none',
+					code: '\\f35e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-float-right',
+					code: '\\f35f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-header-1',
+					code: '\\f360'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-header-2',
+					code: '\\f361'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-header-3',
+					code: '\\f362'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-header-4',
+					code: '\\f363'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-header-5',
+					code: '\\f364'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-header-6',
+					code: '\\f365'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-header-decrease',
+					code: '\\f366'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-header-equal',
+					code: '\\f367'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-header-increase',
+					code: '\\f368'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-header-pound',
+					code: '\\f369'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-indent-decrease',
+					code: '\\f36a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-indent-increase',
+					code: '\\f36b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-italic',
+					code: '\\f36c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-line-spacing',
+					code: '\\f36d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-list-bulleted',
+					code: '\\f36e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-list-bulleted-type',
+					code: '\\f36f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-list-numbers',
+					code: '\\f370'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-paint',
+					code: '\\f371'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-paragraph',
+					code: '\\f372'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-quote',
+					code: '\\f373'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-size',
+					code: '\\f374'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-strikethrough',
+					code: '\\f375'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-strikethrough-variant',
+					code: '\\f376'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-subscript',
+					code: '\\f377'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-superscript',
+					code: '\\f378'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-text',
+					code: '\\f379'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-textdirection-l-to-r',
+					code: '\\f37a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-textdirection-r-to-l',
+					code: '\\f37b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-underline',
+					code: '\\f37c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-wrap-inline',
+					code: '\\f37d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-wrap-square',
+					code: '\\f37e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-wrap-tight',
+					code: '\\f37f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-format-wrap-top-bottom',
+					code: '\\f380'
+				})
+				+box-icon({
+					icon: 'mdi mdi-forum',
+					code: '\\f381'
+				})
+				+box-icon({
+					icon: 'mdi mdi-forward',
+					code: '\\f382'
+				})
+				+box-icon({
+					icon: 'mdi mdi-foursquare',
+					code: '\\f383'
+				})
+				+box-icon({
+					icon: 'mdi mdi-fridge',
+					code: '\\f384'
+				})
+				+box-icon({
+					icon: 'mdi mdi-fridge-filled',
+					code: '\\f385'
+				})
+				+box-icon({
+					icon: 'mdi mdi-fridge-filled-bottom',
+					code: '\\f386'
+				})
+				+box-icon({
+					icon: 'mdi mdi-fridge-filled-top',
+					code: '\\f387'
+				})
+				+box-icon({
+					icon: 'mdi mdi-fullscreen',
+					code: '\\f388'
+				})
+				+box-icon({
+					icon: 'mdi mdi-fullscreen-exit',
+					code: '\\f389'
+				})
+				+box-icon({
+					icon: 'mdi mdi-function',
+					code: '\\f38a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-gamepad',
+					code: '\\f38b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-gamepad-variant',
+					code: '\\f38c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-gas-station',
+					code: '\\f38d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-gate',
+					code: '\\f38e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-gauge',
+					code: '\\f38f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-gavel',
+					code: '\\f390'
+				})
+				+box-icon({
+					icon: 'mdi mdi-gender-female',
+					code: '\\f391'
+				})
+				+box-icon({
+					icon: 'mdi mdi-gender-male',
+					code: '\\f392'
+				})
+				+box-icon({
+					icon: 'mdi mdi-gender-male-female',
+					code: '\\f393'
+				})
+				+box-icon({
+					icon: 'mdi mdi-gender-transgender',
+					code: '\\f394'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ghost',
+					code: '\\f395'
+				})
+				+box-icon({
+					icon: 'mdi mdi-gift',
+					code: '\\f396'
+				})
+				+box-icon({
+					icon: 'mdi mdi-git',
+					code: '\\f397'
+				})
+				+box-icon({
+					icon: 'mdi mdi-github-box',
+					code: '\\f398'
+				})
+				+box-icon({
+					icon: 'mdi mdi-github-circle',
+					code: '\\f399'
+				})
+				+box-icon({
+					icon: 'mdi mdi-glass-flute',
+					code: '\\f39a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-glass-mug',
+					code: '\\f39b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-glass-stange',
+					code: '\\f39c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-glass-tulip',
+					code: '\\f39d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-glasses',
+					code: '\\f39e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-gmail',
+					code: '\\f39f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-google',
+					code: '\\f3a0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-google-cardboard',
+					code: '\\f3a1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-google-chrome',
+					code: '\\f3a2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-google-circles',
+					code: '\\f3a3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-google-circles-communities',
+					code: '\\f3a4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-google-circles-extended',
+					code: '\\f3a5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-google-circles-group',
+					code: '\\f3a6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-google-controller',
+					code: '\\f3a7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-google-controller-off',
+					code: '\\f3a8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-google-drive',
+					code: '\\f3a9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-google-earth',
+					code: '\\f3aa'
+				})
+				+box-icon({
+					icon: 'mdi mdi-google-glass',
+					code: '\\f3ab'
+				})
+				+box-icon({
+					icon: 'mdi mdi-google-nearby',
+					code: '\\f3ac'
+				})
+				+box-icon({
+					icon: 'mdi mdi-google-pages',
+					code: '\\f3ad'
+				})
+				+box-icon({
+					icon: 'mdi mdi-google-physical-web',
+					code: '\\f3ae'
+				})
+				+box-icon({
+					icon: 'mdi mdi-google-play',
+					code: '\\f3af'
+				})
+				+box-icon({
+					icon: 'mdi mdi-google-plus',
+					code: '\\f3b0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-google-plus-box',
+					code: '\\f3b1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-google-translate',
+					code: '\\f3b2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-google-wallet',
+					code: '\\f3b3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-grid',
+					code: '\\f3b4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-grid-off',
+					code: '\\f3b5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-group',
+					code: '\\f3b6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-guitar',
+					code: '\\f3b7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-guitar-pick',
+					code: '\\f3b8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-guitar-pick-outline',
+					code: '\\f3b9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-hand-pointing-right',
+					code: '\\f3ba'
+				})
+				+box-icon({
+					icon: 'mdi mdi-hanger',
+					code: '\\f3bb'
+				})
+				+box-icon({
+					icon: 'mdi mdi-hangouts',
+					code: '\\f3bc'
+				})
+				+box-icon({
+					icon: 'mdi mdi-harddisk',
+					code: '\\f3bd'
+				})
+				+box-icon({
+					icon: 'mdi mdi-headphones',
+					code: '\\f3be'
+				})
+				+box-icon({
+					icon: 'mdi mdi-headphones-box',
+					code: '\\f3bf'
+				})
+				+box-icon({
+					icon: 'mdi mdi-headphones-settings',
+					code: '\\f3c0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-headset',
+					code: '\\f3c1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-headset-dock',
+					code: '\\f3c2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-headset-off',
+					code: '\\f3c3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-heart',
+					code: '\\f3c4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-heart-box',
+					code: '\\f3c5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-heart-box-outline',
+					code: '\\f3c6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-heart-broken',
+					code: '\\f3c7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-heart-outline',
+					code: '\\f3c8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-help',
+					code: '\\f3c9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-help-circle',
+					code: '\\f3ca'
+				})
+				+box-icon({
+					icon: 'mdi mdi-hexagon',
+					code: '\\f3cb'
+				})
+				+box-icon({
+					icon: 'mdi mdi-hexagon-outline',
+					code: '\\f3cc'
+				})
+				+box-icon({
+					icon: 'mdi mdi-history',
+					code: '\\f3cd'
+				})
+				+box-icon({
+					icon: 'mdi mdi-hololens',
+					code: '\\f3ce'
+				})
+				+box-icon({
+					icon: 'mdi mdi-home',
+					code: '\\f3cf'
+				})
+				+box-icon({
+					icon: 'mdi mdi-home-modern',
+					code: '\\f3d0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-home-variant',
+					code: '\\f3d1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-hops',
+					code: '\\f3d2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-hospital',
+					code: '\\f3d3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-hospital-building',
+					code: '\\f3d4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-hospital-marker',
+					code: '\\f3d5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-hotel',
+					code: '\\f3d6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-houzz',
+					code: '\\f3d7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-houzz-box',
+					code: '\\f3d8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-human',
+					code: '\\f3d9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-human-child',
+					code: '\\f3da'
+				})
+				+box-icon({
+					icon: 'mdi mdi-human-male-female',
+					code: '\\f3db'
+				})
+				+box-icon({
+					icon: 'mdi mdi-image',
+					code: '\\f3dc'
+				})
+				+box-icon({
+					icon: 'mdi mdi-image-album',
+					code: '\\f3dd'
+				})
+				+box-icon({
+					icon: 'mdi mdi-image-area',
+					code: '\\f3de'
+				})
+				+box-icon({
+					icon: 'mdi mdi-image-area-close',
+					code: '\\f3df'
+				})
+				+box-icon({
+					icon: 'mdi mdi-image-broken',
+					code: '\\f3e0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-image-broken-variant',
+					code: '\\f3e1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-image-filter',
+					code: '\\f3e2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-image-filter-black-white',
+					code: '\\f3e3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-image-filter-center-focus',
+					code: '\\f3e4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-image-filter-center-focus-weak',
+					code: '\\f3e5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-image-filter-drama',
+					code: '\\f3e6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-image-filter-frames',
+					code: '\\f3e7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-image-filter-hdr',
+					code: '\\f3e8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-image-filter-none',
+					code: '\\f3e9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-image-filter-tilt-shift',
+					code: '\\f3ea'
+				})
+				+box-icon({
+					icon: 'mdi mdi-image-filter-vintage',
+					code: '\\f3eb'
+				})
+				+box-icon({
+					icon: 'mdi mdi-image-multiple',
+					code: '\\f3ec'
+				})
+				+box-icon({
+					icon: 'mdi mdi-import',
+					code: '\\f3ed'
+				})
+				+box-icon({
+					icon: 'mdi mdi-inbox',
+					code: '\\f3ee'
+				})
+				+box-icon({
+					icon: 'mdi mdi-information',
+					code: '\\f3ef'
+				})
+				+box-icon({
+					icon: 'mdi mdi-information-outline',
+					code: '\\f3f0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-instagram',
+					code: '\\f3f1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-instapaper',
+					code: '\\f3f2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-internet-explorer',
+					code: '\\f3f3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-invert-colors',
+					code: '\\f3f4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-jeepney',
+					code: '\\f3f5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-jira',
+					code: '\\f3f6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-jsfiddle',
+					code: '\\f3f7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-keg',
+					code: '\\f3f8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-key',
+					code: '\\f3f9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-key-change',
+					code: '\\f3fa'
+				})
+				+box-icon({
+					icon: 'mdi mdi-key-minus',
+					code: '\\f3fb'
+				})
+				+box-icon({
+					icon: 'mdi mdi-key-plus',
+					code: '\\f3fc'
+				})
+				+box-icon({
+					icon: 'mdi mdi-key-remove',
+					code: '\\f3fd'
+				})
+				+box-icon({
+					icon: 'mdi mdi-key-variant',
+					code: '\\f3fe'
+				})
+				+box-icon({
+					icon: 'mdi mdi-keyboard',
+					code: '\\f3ff'
+				})
+				+box-icon({
+					icon: 'mdi mdi-keyboard-backspace',
+					code: '\\f400'
+				})
+				+box-icon({
+					icon: 'mdi mdi-keyboard-caps',
+					code: '\\f401'
+				})
+				+box-icon({
+					icon: 'mdi mdi-keyboard-close',
+					code: '\\f402'
+				})
+				+box-icon({
+					icon: 'mdi mdi-keyboard-off',
+					code: '\\f403'
+				})
+				+box-icon({
+					icon: 'mdi mdi-keyboard-return',
+					code: '\\f404'
+				})
+				+box-icon({
+					icon: 'mdi mdi-keyboard-tab',
+					code: '\\f405'
+				})
+				+box-icon({
+					icon: 'mdi mdi-keyboard-variant',
+					code: '\\f406'
+				})
+				+box-icon({
+					icon: 'mdi mdi-label',
+					code: '\\f407'
+				})
+				+box-icon({
+					icon: 'mdi mdi-label-outline',
+					code: '\\f408'
+				})
+				+box-icon({
+					icon: 'mdi mdi-lan',
+					code: '\\f409'
+				})
+				+box-icon({
+					icon: 'mdi mdi-lan-connect',
+					code: '\\f40a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-lan-disconnect',
+					code: '\\f40b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-lan-pending',
+					code: '\\f40c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-language-csharp',
+					code: '\\f40d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-language-css3',
+					code: '\\f40e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-language-html5',
+					code: '\\f40f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-language-javascript',
+					code: '\\f410'
+				})
+				+box-icon({
+					icon: 'mdi mdi-language-php',
+					code: '\\f411'
+				})
+				+box-icon({
+					icon: 'mdi mdi-language-python',
+					code: '\\f412'
+				})
+				+box-icon({
+					icon: 'mdi mdi-language-python-text',
+					code: '\\f413'
+				})
+				+box-icon({
+					icon: 'mdi mdi-laptop',
+					code: '\\f414'
+				})
+				+box-icon({
+					icon: 'mdi mdi-laptop-chromebook',
+					code: '\\f415'
+				})
+				+box-icon({
+					icon: 'mdi mdi-laptop-mac',
+					code: '\\f416'
+				})
+				+box-icon({
+					icon: 'mdi mdi-laptop-windows',
+					code: '\\f417'
+				})
+				+box-icon({
+					icon: 'mdi mdi-lastfm',
+					code: '\\f418'
+				})
+				+box-icon({
+					icon: 'mdi mdi-launch',
+					code: '\\f419'
+				})
+				+box-icon({
+					icon: 'mdi mdi-layers',
+					code: '\\f41a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-layers-off',
+					code: '\\f41b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-leaf',
+					code: '\\f41c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-led-off',
+					code: '\\f41d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-led-on',
+					code: '\\f41e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-led-outline',
+					code: '\\f41f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-led-variant-off',
+					code: '\\f420'
+				})
+				+box-icon({
+					icon: 'mdi mdi-led-variant-on',
+					code: '\\f421'
+				})
+				+box-icon({
+					icon: 'mdi mdi-led-variant-outline',
+					code: '\\f422'
+				})
+				+box-icon({
+					icon: 'mdi mdi-library',
+					code: '\\f423'
+				})
+				+box-icon({
+					icon: 'mdi mdi-library-books',
+					code: '\\f424'
+				})
+				+box-icon({
+					icon: 'mdi mdi-library-music',
+					code: '\\f425'
+				})
+				+box-icon({
+					icon: 'mdi mdi-library-plus',
+					code: '\\f426'
+				})
+				+box-icon({
+					icon: 'mdi mdi-lightbulb',
+					code: '\\f427'
+				})
+				+box-icon({
+					icon: 'mdi mdi-lightbulb-outline',
+					code: '\\f428'
+				})
+				+box-icon({
+					icon: 'mdi mdi-link',
+					code: '\\f429'
+				})
+				+box-icon({
+					icon: 'mdi mdi-link-off',
+					code: '\\f42a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-link-variant',
+					code: '\\f42b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-link-variant-off',
+					code: '\\f42c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-linkedin',
+					code: '\\f42d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-linkedin-box',
+					code: '\\f42e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-linux',
+					code: '\\f42f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-lock',
+					code: '\\f430'
+				})
+				+box-icon({
+					icon: 'mdi mdi-lock-open',
+					code: '\\f431'
+				})
+				+box-icon({
+					icon: 'mdi mdi-lock-open-outline',
+					code: '\\f432'
+				})
+				+box-icon({
+					icon: 'mdi mdi-lock-outline',
+					code: '\\f433'
+				})
+				+box-icon({
+					icon: 'mdi mdi-login',
+					code: '\\f434'
+				})
+				+box-icon({
+					icon: 'mdi mdi-logout',
+					code: '\\f435'
+				})
+				+box-icon({
+					icon: 'mdi mdi-looks',
+					code: '\\f436'
+				})
+				+box-icon({
+					icon: 'mdi mdi-loupe',
+					code: '\\f437'
+				})
+				+box-icon({
+					icon: 'mdi mdi-lumx',
+					code: '\\f438'
+				})
+				+box-icon({
+					icon: 'mdi mdi-magnet',
+					code: '\\f439'
+				})
+				+box-icon({
+					icon: 'mdi mdi-magnet-on',
+					code: '\\f43a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-magnify',
+					code: '\\f43b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-magnify-minus',
+					code: '\\f43c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-magnify-plus',
+					code: '\\f43d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-mail-ru',
+					code: '\\f43e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-map',
+					code: '\\f43f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-map-marker',
+					code: '\\f440'
+				})
+				+box-icon({
+					icon: 'mdi mdi-map-marker-circle',
+					code: '\\f441'
+				})
+				+box-icon({
+					icon: 'mdi mdi-map-marker-multiple',
+					code: '\\f442'
+				})
+				+box-icon({
+					icon: 'mdi mdi-map-marker-off',
+					code: '\\f443'
+				})
+				+box-icon({
+					icon: 'mdi mdi-map-marker-radius',
+					code: '\\f444'
+				})
+				+box-icon({
+					icon: 'mdi mdi-margin',
+					code: '\\f445'
+				})
+				+box-icon({
+					icon: 'mdi mdi-markdown',
+					code: '\\f446'
+				})
+				+box-icon({
+					icon: 'mdi mdi-marker-check',
+					code: '\\f447'
+				})
+				+box-icon({
+					icon: 'mdi mdi-martini',
+					code: '\\f448'
+				})
+				+box-icon({
+					icon: 'mdi mdi-material-ui',
+					code: '\\f449'
+				})
+				+box-icon({
+					icon: 'mdi mdi-math-compass',
+					code: '\\f44a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-maxcdn',
+					code: '\\f44b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-medium',
+					code: '\\f44c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-memory',
+					code: '\\f44d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-menu',
+					code: '\\f44e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-menu-down',
+					code: '\\f44f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-menu-left',
+					code: '\\f450'
+				})
+				+box-icon({
+					icon: 'mdi mdi-menu-right',
+					code: '\\f451'
+				})
+				+box-icon({
+					icon: 'mdi mdi-menu-up',
+					code: '\\f452'
+				})
+				+box-icon({
+					icon: 'mdi mdi-message',
+					code: '\\f453'
+				})
+				+box-icon({
+					icon: 'mdi mdi-message-alert',
+					code: '\\f454'
+				})
+				+box-icon({
+					icon: 'mdi mdi-message-draw',
+					code: '\\f455'
+				})
+				+box-icon({
+					icon: 'mdi mdi-message-image',
+					code: '\\f456'
+				})
+				+box-icon({
+					icon: 'mdi mdi-message-outline',
+					code: '\\f457'
+				})
+				+box-icon({
+					icon: 'mdi mdi-message-processing',
+					code: '\\f458'
+				})
+				+box-icon({
+					icon: 'mdi mdi-message-reply',
+					code: '\\f459'
+				})
+				+box-icon({
+					icon: 'mdi mdi-message-reply-text',
+					code: '\\f45a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-message-text',
+					code: '\\f45b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-message-text-outline',
+					code: '\\f45c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-message-video',
+					code: '\\f45d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-microphone',
+					code: '\\f45e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-microphone-off',
+					code: '\\f45f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-microphone-outline',
+					code: '\\f460'
+				})
+				+box-icon({
+					icon: 'mdi mdi-microphone-settings',
+					code: '\\f461'
+				})
+				+box-icon({
+					icon: 'mdi mdi-microphone-variant',
+					code: '\\f462'
+				})
+				+box-icon({
+					icon: 'mdi mdi-microphone-variant-off',
+					code: '\\f463'
+				})
+				+box-icon({
+					icon: 'mdi mdi-microsoft',
+					code: '\\f464'
+				})
+				+box-icon({
+					icon: 'mdi mdi-minus',
+					code: '\\f465'
+				})
+				+box-icon({
+					icon: 'mdi mdi-minus-box',
+					code: '\\f466'
+				})
+				+box-icon({
+					icon: 'mdi mdi-minus-circle',
+					code: '\\f467'
+				})
+				+box-icon({
+					icon: 'mdi mdi-minus-circle-outline',
+					code: '\\f468'
+				})
+				+box-icon({
+					icon: 'mdi mdi-minus-network',
+					code: '\\f469'
+				})
+				+box-icon({
+					icon: 'mdi mdi-monitor',
+					code: '\\f46a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-monitor-multiple',
+					code: '\\f46b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-more',
+					code: '\\f46c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-motorbike',
+					code: '\\f46d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-mouse',
+					code: '\\f46e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-mouse-off',
+					code: '\\f46f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-mouse-variant',
+					code: '\\f470'
+				})
+				+box-icon({
+					icon: 'mdi mdi-mouse-variant-off',
+					code: '\\f471'
+				})
+				+box-icon({
+					icon: 'mdi mdi-movie',
+					code: '\\f472'
+				})
+				+box-icon({
+					icon: 'mdi mdi-multiplication',
+					code: '\\f473'
+				})
+				+box-icon({
+					icon: 'mdi mdi-multiplication-box',
+					code: '\\f474'
+				})
+				+box-icon({
+					icon: 'mdi mdi-music-box',
+					code: '\\f475'
+				})
+				+box-icon({
+					icon: 'mdi mdi-music-box-outline',
+					code: '\\f476'
+				})
+				+box-icon({
+					icon: 'mdi mdi-music-circle',
+					code: '\\f477'
+				})
+				+box-icon({
+					icon: 'mdi mdi-music-note',
+					code: '\\f478'
+				})
+				+box-icon({
+					icon: 'mdi mdi-music-note-eighth',
+					code: '\\f479'
+				})
+				+box-icon({
+					icon: 'mdi mdi-music-note-half',
+					code: '\\f47a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-music-note-off',
+					code: '\\f47b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-music-note-quarter',
+					code: '\\f47c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-music-note-sixteenth',
+					code: '\\f47d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-music-note-whole',
+					code: '\\f47e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-nature',
+					code: '\\f47f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-nature-people',
+					code: '\\f480'
+				})
+				+box-icon({
+					icon: 'mdi mdi-navigation',
+					code: '\\f481'
+				})
+				+box-icon({
+					icon: 'mdi mdi-needle',
+					code: '\\f482'
+				})
+				+box-icon({
+					icon: 'mdi mdi-nest-protect',
+					code: '\\f483'
+				})
+				+box-icon({
+					icon: 'mdi mdi-nest-thermostat',
+					code: '\\f484'
+				})
+				+box-icon({
+					icon: 'mdi mdi-newspaper',
+					code: '\\f485'
+				})
+				+box-icon({
+					icon: 'mdi mdi-nfc',
+					code: '\\f486'
+				})
+				+box-icon({
+					icon: 'mdi mdi-nfc-tap',
+					code: '\\f487'
+				})
+				+box-icon({
+					icon: 'mdi mdi-nfc-variant',
+					code: '\\f488'
+				})
+				+box-icon({
+					icon: 'mdi mdi-nodejs',
+					code: '\\f489'
+				})
+				+box-icon({
+					icon: 'mdi mdi-note',
+					code: '\\f48a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-note-outline',
+					code: '\\f48b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-note-plus',
+					code: '\\f48c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-note-plus-outline',
+					code: '\\f48d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-note-text',
+					code: '\\f48e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-notification-clear-all',
+					code: '\\f48f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric',
+					code: '\\f490'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-0-box',
+					code: '\\f491'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-0-box-multiple-outline',
+					code: '\\f492'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-0-box-outline',
+					code: '\\f493'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-1-box',
+					code: '\\f494'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-1-box-multiple-outline',
+					code: '\\f495'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-1-box-outline',
+					code: '\\f496'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-2-box',
+					code: '\\f497'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-2-box-multiple-outline',
+					code: '\\f498'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-2-box-outline',
+					code: '\\f499'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-3-box',
+					code: '\\f49a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-3-box-multiple-outline',
+					code: '\\f49b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-3-box-outline',
+					code: '\\f49c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-4-box',
+					code: '\\f49d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-4-box-multiple-outline',
+					code: '\\f49e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-4-box-outline',
+					code: '\\f49f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-5-box',
+					code: '\\f4a0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-5-box-multiple-outline',
+					code: '\\f4a1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-5-box-outline',
+					code: '\\f4a2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-6-box',
+					code: '\\f4a3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-6-box-multiple-outline',
+					code: '\\f4a4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-6-box-outline',
+					code: '\\f4a5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-7-box',
+					code: '\\f4a6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-7-box-multiple-outline',
+					code: '\\f4a7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-7-box-outline',
+					code: '\\f4a8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-8-box',
+					code: '\\f4a9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-8-box-multiple-outline',
+					code: '\\f4aa'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-8-box-outline',
+					code: '\\f4ab'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-9-box',
+					code: '\\f4ac'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-9-box-multiple-outline',
+					code: '\\f4ad'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-9-box-outline',
+					code: '\\f4ae'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-9-plus-box',
+					code: '\\f4af'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-9-plus-box-multiple-outline',
+					code: '\\f4b0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-numeric-9-plus-box-outline',
+					code: '\\f4b1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-nutrition',
+					code: '\\f4b2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-octagon',
+					code: '\\f4b3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-octagon-outline',
+					code: '\\f4b4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-odnoklassniki',
+					code: '\\f4b5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-office',
+					code: '\\f4b6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-oil',
+					code: '\\f4b7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-oil-temperature',
+					code: '\\f4b8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-omega',
+					code: '\\f4b9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-onedrive',
+					code: '\\f4ba'
+				})
+				+box-icon({
+					icon: 'mdi mdi-open-in-app',
+					code: '\\f4bb'
+				})
+				+box-icon({
+					icon: 'mdi mdi-open-in-new',
+					code: '\\f4bc'
+				})
+				+box-icon({
+					icon: 'mdi mdi-opera',
+					code: '\\f4bd'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ornament',
+					code: '\\f4be'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ornament-variant',
+					code: '\\f4bf'
+				})
+				+box-icon({
+					icon: 'mdi mdi-outbox',
+					code: '\\f4c0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-owl',
+					code: '\\f4c1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-package',
+					code: '\\f4c2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-package-down',
+					code: '\\f4c3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-package-up',
+					code: '\\f4c4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-package-variant',
+					code: '\\f4c5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-package-variant-closed',
+					code: '\\f4c6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-palette',
+					code: '\\f4c7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-palette-advanced',
+					code: '\\f4c8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-panda',
+					code: '\\f4c9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pandora',
+					code: '\\f4ca'
+				})
+				+box-icon({
+					icon: 'mdi mdi-panorama',
+					code: '\\f4cb'
+				})
+				+box-icon({
+					icon: 'mdi mdi-panorama-fisheye',
+					code: '\\f4cc'
+				})
+				+box-icon({
+					icon: 'mdi mdi-panorama-horizontal',
+					code: '\\f4cd'
+				})
+				+box-icon({
+					icon: 'mdi mdi-panorama-vertical',
+					code: '\\f4ce'
+				})
+				+box-icon({
+					icon: 'mdi mdi-panorama-wide-angle',
+					code: '\\f4cf'
+				})
+				+box-icon({
+					icon: 'mdi mdi-paper-cut-vertical',
+					code: '\\f4d0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-paperclip',
+					code: '\\f4d1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-parking',
+					code: '\\f4d2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pause',
+					code: '\\f4d3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pause-circle',
+					code: '\\f4d4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pause-circle-outline',
+					code: '\\f4d5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pause-octagon',
+					code: '\\f4d6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pause-octagon-outline',
+					code: '\\f4d7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-paw',
+					code: '\\f4d8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pen',
+					code: '\\f4d9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pencil',
+					code: '\\f4da'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pencil-box',
+					code: '\\f4db'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pencil-box-outline',
+					code: '\\f4dc'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pencil-lock',
+					code: '\\f4dd'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pencil-off',
+					code: '\\f4de'
+				})
+				+box-icon({
+					icon: 'mdi mdi-percent',
+					code: '\\f4df'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pharmacy',
+					code: '\\f4e0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-phone',
+					code: '\\f4e1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-phone-bluetooth',
+					code: '\\f4e2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-phone-forward',
+					code: '\\f4e3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-phone-hangup',
+					code: '\\f4e4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-phone-in-talk',
+					code: '\\f4e5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-phone-incoming',
+					code: '\\f4e6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-phone-locked',
+					code: '\\f4e7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-phone-log',
+					code: '\\f4e8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-phone-missed',
+					code: '\\f4e9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-phone-outgoing',
+					code: '\\f4ea'
+				})
+				+box-icon({
+					icon: 'mdi mdi-phone-paused',
+					code: '\\f4eb'
+				})
+				+box-icon({
+					icon: 'mdi mdi-phone-settings',
+					code: '\\f4ec'
+				})
+				+box-icon({
+					icon: 'mdi mdi-phone-voip',
+					code: '\\f4ed'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pi',
+					code: '\\f4ee'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pi-box',
+					code: '\\f4ef'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pig',
+					code: '\\f4f0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pill',
+					code: '\\f4f1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pin',
+					code: '\\f4f2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pin-off',
+					code: '\\f4f3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pine-tree',
+					code: '\\f4f4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pine-tree-box',
+					code: '\\f4f5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pinterest',
+					code: '\\f4f6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pinterest-box',
+					code: '\\f4f7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pizza',
+					code: '\\f4f8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-play',
+					code: '\\f4f9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-play-box-outline',
+					code: '\\f4fa'
+				})
+				+box-icon({
+					icon: 'mdi mdi-play-circle',
+					code: '\\f4fb'
+				})
+				+box-icon({
+					icon: 'mdi mdi-play-circle-outline',
+					code: '\\f4fc'
+				})
+				+box-icon({
+					icon: 'mdi mdi-play-pause',
+					code: '\\f4fd'
+				})
+				+box-icon({
+					icon: 'mdi mdi-play-protected-content',
+					code: '\\f4fe'
+				})
+				+box-icon({
+					icon: 'mdi mdi-playlist-minus',
+					code: '\\f4ff'
+				})
+				+box-icon({
+					icon: 'mdi mdi-playlist-play',
+					code: '\\f500'
+				})
+				+box-icon({
+					icon: 'mdi mdi-playlist-plus',
+					code: '\\f501'
+				})
+				+box-icon({
+					icon: 'mdi mdi-playlist-remove',
+					code: '\\f502'
+				})
+				+box-icon({
+					icon: 'mdi mdi-playstation',
+					code: '\\f503'
+				})
+				+box-icon({
+					icon: 'mdi mdi-plus',
+					code: '\\f504'
+				})
+				+box-icon({
+					icon: 'mdi mdi-plus-box',
+					code: '\\f505'
+				})
+				+box-icon({
+					icon: 'mdi mdi-plus-circle',
+					code: '\\f506'
+				})
+				+box-icon({
+					icon: 'mdi mdi-plus-circle-multiple-outline',
+					code: '\\f507'
+				})
+				+box-icon({
+					icon: 'mdi mdi-plus-circle-outline',
+					code: '\\f508'
+				})
+				+box-icon({
+					icon: 'mdi mdi-plus-network',
+					code: '\\f509'
+				})
+				+box-icon({
+					icon: 'mdi mdi-plus-one',
+					code: '\\f50a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pocket',
+					code: '\\f50b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pokeball',
+					code: '\\f50c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-polaroid',
+					code: '\\f50d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-poll',
+					code: '\\f50e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-poll-box',
+					code: '\\f50f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-polymer',
+					code: '\\f510'
+				})
+				+box-icon({
+					icon: 'mdi mdi-popcorn',
+					code: '\\f511'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pound',
+					code: '\\f512'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pound-box',
+					code: '\\f513'
+				})
+				+box-icon({
+					icon: 'mdi mdi-power',
+					code: '\\f514'
+				})
+				+box-icon({
+					icon: 'mdi mdi-power-settings',
+					code: '\\f515'
+				})
+				+box-icon({
+					icon: 'mdi mdi-power-socket',
+					code: '\\f516'
+				})
+				+box-icon({
+					icon: 'mdi mdi-presentation',
+					code: '\\f517'
+				})
+				+box-icon({
+					icon: 'mdi mdi-presentation-play',
+					code: '\\f518'
+				})
+				+box-icon({
+					icon: 'mdi mdi-printer',
+					code: '\\f519'
+				})
+				+box-icon({
+					icon: 'mdi mdi-printer-3d',
+					code: '\\f51a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-printer-alert',
+					code: '\\f51b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-professional-hexagon',
+					code: '\\f51c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-projector',
+					code: '\\f51d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-projector-screen',
+					code: '\\f51e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-pulse',
+					code: '\\f51f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-puzzle',
+					code: '\\f520'
+				})
+				+box-icon({
+					icon: 'mdi mdi-qrcode',
+					code: '\\f521'
+				})
+				+box-icon({
+					icon: 'mdi mdi-qrcode-scan',
+					code: '\\f522'
+				})
+				+box-icon({
+					icon: 'mdi mdi-quadcopter',
+					code: '\\f523'
+				})
+				+box-icon({
+					icon: 'mdi mdi-quality-high',
+					code: '\\f524'
+				})
+				+box-icon({
+					icon: 'mdi mdi-quicktime',
+					code: '\\f525'
+				})
+				+box-icon({
+					icon: 'mdi mdi-radar',
+					code: '\\f526'
+				})
+				+box-icon({
+					icon: 'mdi mdi-radiator',
+					code: '\\f527'
+				})
+				+box-icon({
+					icon: 'mdi mdi-radio',
+					code: '\\f528'
+				})
+				+box-icon({
+					icon: 'mdi mdi-radio-handheld',
+					code: '\\f529'
+				})
+				+box-icon({
+					icon: 'mdi mdi-radio-tower',
+					code: '\\f52a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-radioactive',
+					code: '\\f52b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-radiobox-blank',
+					code: '\\f52c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-radiobox-marked',
+					code: '\\f52d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-raspberrypi',
+					code: '\\f52e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ray-end',
+					code: '\\f52f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ray-end-arrow',
+					code: '\\f530'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ray-start',
+					code: '\\f531'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ray-start-arrow',
+					code: '\\f532'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ray-start-end',
+					code: '\\f533'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ray-vertex',
+					code: '\\f534'
+				})
+				+box-icon({
+					icon: 'mdi mdi-rdio',
+					code: '\\f535'
+				})
+				+box-icon({
+					icon: 'mdi mdi-read',
+					code: '\\f536'
+				})
+				+box-icon({
+					icon: 'mdi mdi-readability',
+					code: '\\f537'
+				})
+				+box-icon({
+					icon: 'mdi mdi-receipt',
+					code: '\\f538'
+				})
+				+box-icon({
+					icon: 'mdi mdi-record',
+					code: '\\f539'
+				})
+				+box-icon({
+					icon: 'mdi mdi-record-rec',
+					code: '\\f53a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-recycle',
+					code: '\\f53b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-reddit',
+					code: '\\f53c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-redo',
+					code: '\\f53d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-redo-variant',
+					code: '\\f53e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-refresh',
+					code: '\\f53f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-regex',
+					code: '\\f540'
+				})
+				+box-icon({
+					icon: 'mdi mdi-relative-scale',
+					code: '\\f541'
+				})
+				+box-icon({
+					icon: 'mdi mdi-reload',
+					code: '\\f542'
+				})
+				+box-icon({
+					icon: 'mdi mdi-remote',
+					code: '\\f543'
+				})
+				+box-icon({
+					icon: 'mdi mdi-rename-box',
+					code: '\\f544'
+				})
+				+box-icon({
+					icon: 'mdi mdi-repeat',
+					code: '\\f545'
+				})
+				+box-icon({
+					icon: 'mdi mdi-repeat-off',
+					code: '\\f546'
+				})
+				+box-icon({
+					icon: 'mdi mdi-repeat-once',
+					code: '\\f547'
+				})
+				+box-icon({
+					icon: 'mdi mdi-replay',
+					code: '\\f548'
+				})
+				+box-icon({
+					icon: 'mdi mdi-reply',
+					code: '\\f549'
+				})
+				+box-icon({
+					icon: 'mdi mdi-reply-all',
+					code: '\\f54a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-reproduction',
+					code: '\\f54b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-resize-bottom-right',
+					code: '\\f54c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-responsive',
+					code: '\\f54d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-rewind',
+					code: '\\f54e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ribbon',
+					code: '\\f54f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-road',
+					code: '\\f550'
+				})
+				+box-icon({
+					icon: 'mdi mdi-road-variant',
+					code: '\\f551'
+				})
+				+box-icon({
+					icon: 'mdi mdi-rocket',
+					code: '\\f552'
+				})
+				+box-icon({
+					icon: 'mdi mdi-rotate-3d',
+					code: '\\f553'
+				})
+				+box-icon({
+					icon: 'mdi mdi-rotate-left',
+					code: '\\f554'
+				})
+				+box-icon({
+					icon: 'mdi mdi-rotate-left-variant',
+					code: '\\f555'
+				})
+				+box-icon({
+					icon: 'mdi mdi-rotate-right',
+					code: '\\f556'
+				})
+				+box-icon({
+					icon: 'mdi mdi-rotate-right-variant',
+					code: '\\f557'
+				})
+				+box-icon({
+					icon: 'mdi mdi-router-wireless',
+					code: '\\f558'
+				})
+				+box-icon({
+					icon: 'mdi mdi-routes',
+					code: '\\f559'
+				})
+				+box-icon({
+					icon: 'mdi mdi-rss',
+					code: '\\f55a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-rss-box',
+					code: '\\f55b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ruler',
+					code: '\\f55c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-run',
+					code: '\\f55d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sale',
+					code: '\\f55e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-satellite',
+					code: '\\f55f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-satellite-variant',
+					code: '\\f560'
+				})
+				+box-icon({
+					icon: 'mdi mdi-scale',
+					code: '\\f561'
+				})
+				+box-icon({
+					icon: 'mdi mdi-scale-bathroom',
+					code: '\\f562'
+				})
+				+box-icon({
+					icon: 'mdi mdi-school',
+					code: '\\f563'
+				})
+				+box-icon({
+					icon: 'mdi mdi-screen-rotation',
+					code: '\\f564'
+				})
+				+box-icon({
+					icon: 'mdi mdi-screen-rotation-lock',
+					code: '\\f565'
+				})
+				+box-icon({
+					icon: 'mdi mdi-screwdriver',
+					code: '\\f566'
+				})
+				+box-icon({
+					icon: 'mdi mdi-script',
+					code: '\\f567'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sd',
+					code: '\\f568'
+				})
+				+box-icon({
+					icon: 'mdi mdi-seal',
+					code: '\\f569'
+				})
+				+box-icon({
+					icon: 'mdi mdi-seat-flat',
+					code: '\\f56a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-seat-flat-angled',
+					code: '\\f56b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-seat-individual-suite',
+					code: '\\f56c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-seat-legroom-extra',
+					code: '\\f56d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-seat-legroom-normal',
+					code: '\\f56e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-seat-legroom-reduced',
+					code: '\\f56f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-seat-recline-extra',
+					code: '\\f570'
+				})
+				+box-icon({
+					icon: 'mdi mdi-seat-recline-normal',
+					code: '\\f571'
+				})
+				+box-icon({
+					icon: 'mdi mdi-security',
+					code: '\\f572'
+				})
+				+box-icon({
+					icon: 'mdi mdi-security-network',
+					code: '\\f573'
+				})
+				+box-icon({
+					icon: 'mdi mdi-select',
+					code: '\\f574'
+				})
+				+box-icon({
+					icon: 'mdi mdi-select-all',
+					code: '\\f575'
+				})
+				+box-icon({
+					icon: 'mdi mdi-select-inverse',
+					code: '\\f576'
+				})
+				+box-icon({
+					icon: 'mdi mdi-select-off',
+					code: '\\f577'
+				})
+				+box-icon({
+					icon: 'mdi mdi-selection',
+					code: '\\f578'
+				})
+				+box-icon({
+					icon: 'mdi mdi-send',
+					code: '\\f579'
+				})
+				+box-icon({
+					icon: 'mdi mdi-server',
+					code: '\\f57a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-server-minus',
+					code: '\\f57b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-server-network',
+					code: '\\f57c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-server-network-off',
+					code: '\\f57d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-server-off',
+					code: '\\f57e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-server-plus',
+					code: '\\f57f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-server-remove',
+					code: '\\f580'
+				})
+				+box-icon({
+					icon: 'mdi mdi-server-security',
+					code: '\\f581'
+				})
+				+box-icon({
+					icon: 'mdi mdi-settings',
+					code: '\\f582'
+				})
+				+box-icon({
+					icon: 'mdi mdi-settings-box',
+					code: '\\f583'
+				})
+				+box-icon({
+					icon: 'mdi mdi-shape-plus',
+					code: '\\f584'
+				})
+				+box-icon({
+					icon: 'mdi mdi-share',
+					code: '\\f585'
+				})
+				+box-icon({
+					icon: 'mdi mdi-share-variant',
+					code: '\\f586'
+				})
+				+box-icon({
+					icon: 'mdi mdi-shield',
+					code: '\\f587'
+				})
+				+box-icon({
+					icon: 'mdi mdi-shield-outline',
+					code: '\\f588'
+				})
+				+box-icon({
+					icon: 'mdi mdi-shopping',
+					code: '\\f589'
+				})
+				+box-icon({
+					icon: 'mdi mdi-shopping-music',
+					code: '\\f58a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-shredder',
+					code: '\\f58b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-shuffle',
+					code: '\\f58c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-shuffle-disabled',
+					code: '\\f58d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-shuffle-variant',
+					code: '\\f58e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sigma',
+					code: '\\f58f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sign-caution',
+					code: '\\f590'
+				})
+				+box-icon({
+					icon: 'mdi mdi-signal',
+					code: '\\f591'
+				})
+				+box-icon({
+					icon: 'mdi mdi-silverware',
+					code: '\\f592'
+				})
+				+box-icon({
+					icon: 'mdi mdi-silverware-fork',
+					code: '\\f593'
+				})
+				+box-icon({
+					icon: 'mdi mdi-silverware-spoon',
+					code: '\\f594'
+				})
+				+box-icon({
+					icon: 'mdi mdi-silverware-variant',
+					code: '\\f595'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sim',
+					code: '\\f596'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sim-alert',
+					code: '\\f597'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sim-off',
+					code: '\\f598'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sitemap',
+					code: '\\f599'
+				})
+				+box-icon({
+					icon: 'mdi mdi-skip-backward',
+					code: '\\f59a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-skip-forward',
+					code: '\\f59b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-skip-next',
+					code: '\\f59c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-skip-previous',
+					code: '\\f59d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-skype',
+					code: '\\f59e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-skype-business',
+					code: '\\f59f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-slack',
+					code: '\\f5a0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sleep',
+					code: '\\f5a1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sleep-off',
+					code: '\\f5a2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-smoking',
+					code: '\\f5a3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-smoking-off',
+					code: '\\f5a4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-snapchat',
+					code: '\\f5a5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-snowman',
+					code: '\\f5a6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sofa',
+					code: '\\f5a7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sort',
+					code: '\\f5a8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sort-alphabetical',
+					code: '\\f5a9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sort-ascending',
+					code: '\\f5aa'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sort-descending',
+					code: '\\f5ab'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sort-numeric',
+					code: '\\f5ac'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sort-variant',
+					code: '\\f5ad'
+				})
+				+box-icon({
+					icon: 'mdi mdi-soundcloud',
+					code: '\\f5ae'
+				})
+				+box-icon({
+					icon: 'mdi mdi-source-fork',
+					code: '\\f5af'
+				})
+				+box-icon({
+					icon: 'mdi mdi-source-pull',
+					code: '\\f5b0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-speaker',
+					code: '\\f5b1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-speaker-off',
+					code: '\\f5b2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-speedometer',
+					code: '\\f5b3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-spellcheck',
+					code: '\\f5b4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-spotify',
+					code: '\\f5b5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-spotlight',
+					code: '\\f5b6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-spotlight-beam',
+					code: '\\f5b7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-square-inc',
+					code: '\\f5b8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-square-inc-cash',
+					code: '\\f5b9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-stackoverflow',
+					code: '\\f5ba'
+				})
+				+box-icon({
+					icon: 'mdi mdi-stairs',
+					code: '\\f5bb'
+				})
+				+box-icon({
+					icon: 'mdi mdi-star',
+					code: '\\f5bc'
+				})
+				+box-icon({
+					icon: 'mdi mdi-star-circle',
+					code: '\\f5bd'
+				})
+				+box-icon({
+					icon: 'mdi mdi-star-half',
+					code: '\\f5be'
+				})
+				+box-icon({
+					icon: 'mdi mdi-star-off',
+					code: '\\f5bf'
+				})
+				+box-icon({
+					icon: 'mdi mdi-star-outline',
+					code: '\\f5c0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-steam',
+					code: '\\f5c1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-steering',
+					code: '\\f5c2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-step-backward',
+					code: '\\f5c3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-step-backward-2',
+					code: '\\f5c4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-step-forward',
+					code: '\\f5c5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-step-forward-2',
+					code: '\\f5c6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-stethoscope',
+					code: '\\f5c7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-stocking',
+					code: '\\f5c8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-stop',
+					code: '\\f5c9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-store',
+					code: '\\f5ca'
+				})
+				+box-icon({
+					icon: 'mdi mdi-store-24-hour',
+					code: '\\f5cb'
+				})
+				+box-icon({
+					icon: 'mdi mdi-stove',
+					code: '\\f5cc'
+				})
+				+box-icon({
+					icon: 'mdi mdi-subway',
+					code: '\\f5cd'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sunglasses',
+					code: '\\f5ce'
+				})
+				+box-icon({
+					icon: 'mdi mdi-swap-horizontal',
+					code: '\\f5cf'
+				})
+				+box-icon({
+					icon: 'mdi mdi-swap-vertical',
+					code: '\\f5d0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-swim',
+					code: '\\f5d1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-switch',
+					code: '\\f5d2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sword',
+					code: '\\f5d3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sync',
+					code: '\\f5d4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sync-alert',
+					code: '\\f5d5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-sync-off',
+					code: '\\f5d6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tab',
+					code: '\\f5d7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tab-unselected',
+					code: '\\f5d8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-table',
+					code: '\\f5d9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-table-column-plus-after',
+					code: '\\f5da'
+				})
+				+box-icon({
+					icon: 'mdi mdi-table-column-plus-before',
+					code: '\\f5db'
+				})
+				+box-icon({
+					icon: 'mdi mdi-table-column-remove',
+					code: '\\f5dc'
+				})
+				+box-icon({
+					icon: 'mdi mdi-table-column-width',
+					code: '\\f5dd'
+				})
+				+box-icon({
+					icon: 'mdi mdi-table-edit',
+					code: '\\f5de'
+				})
+				+box-icon({
+					icon: 'mdi mdi-table-large',
+					code: '\\f5df'
+				})
+				+box-icon({
+					icon: 'mdi mdi-table-row-height',
+					code: '\\f5e0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-table-row-plus-after',
+					code: '\\f5e1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-table-row-plus-before',
+					code: '\\f5e2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-table-row-remove',
+					code: '\\f5e3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tablet',
+					code: '\\f5e4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tablet-android',
+					code: '\\f5e5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tablet-ipad',
+					code: '\\f5e6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tag',
+					code: '\\f5e7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tag-faces',
+					code: '\\f5e8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tag-multiple',
+					code: '\\f5e9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tag-outline',
+					code: '\\f5ea'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tag-text-outline',
+					code: '\\f5eb'
+				})
+				+box-icon({
+					icon: 'mdi mdi-target',
+					code: '\\f5ec'
+				})
+				+box-icon({
+					icon: 'mdi mdi-taxi',
+					code: '\\f5ed'
+				})
+				+box-icon({
+					icon: 'mdi mdi-teamviewer',
+					code: '\\f5ee'
+				})
+				+box-icon({
+					icon: 'mdi mdi-telegram',
+					code: '\\f5ef'
+				})
+				+box-icon({
+					icon: 'mdi mdi-television',
+					code: '\\f5f0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-television-guide',
+					code: '\\f5f1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-temperature-celsius',
+					code: '\\f5f2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-temperature-fahrenheit',
+					code: '\\f5f3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-temperature-kelvin',
+					code: '\\f5f4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tennis',
+					code: '\\f5f5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tent',
+					code: '\\f5f6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-terrain',
+					code: '\\f5f7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-text-to-speech',
+					code: '\\f5f8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-text-to-speech-off',
+					code: '\\f5f9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-texture',
+					code: '\\f5fa'
+				})
+				+box-icon({
+					icon: 'mdi mdi-theater',
+					code: '\\f5fb'
+				})
+				+box-icon({
+					icon: 'mdi mdi-theme-light-dark',
+					code: '\\f5fc'
+				})
+				+box-icon({
+					icon: 'mdi mdi-thermometer',
+					code: '\\f5fd'
+				})
+				+box-icon({
+					icon: 'mdi mdi-thermometer-lines',
+					code: '\\f5fe'
+				})
+				+box-icon({
+					icon: 'mdi mdi-thumb-down',
+					code: '\\f5ff'
+				})
+				+box-icon({
+					icon: 'mdi mdi-thumb-down-outline',
+					code: '\\f600'
+				})
+				+box-icon({
+					icon: 'mdi mdi-thumb-up',
+					code: '\\f601'
+				})
+				+box-icon({
+					icon: 'mdi mdi-thumb-up-outline',
+					code: '\\f602'
+				})
+				+box-icon({
+					icon: 'mdi mdi-thumbs-up-down',
+					code: '\\f603'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ticket',
+					code: '\\f604'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ticket-account',
+					code: '\\f605'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ticket-confirmation',
+					code: '\\f606'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tie',
+					code: '\\f607'
+				})
+				+box-icon({
+					icon: 'mdi mdi-timelapse',
+					code: '\\f608'
+				})
+				+box-icon({
+					icon: 'mdi mdi-timer',
+					code: '\\f609'
+				})
+				+box-icon({
+					icon: 'mdi mdi-timer-10',
+					code: '\\f60a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-timer-3',
+					code: '\\f60b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-timer-off',
+					code: '\\f60c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-timer-sand',
+					code: '\\f60d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-timetable',
+					code: '\\f60e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-toggle-switch',
+					code: '\\f60f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-toggle-switch-off',
+					code: '\\f610'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tooltip',
+					code: '\\f611'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tooltip-edit',
+					code: '\\f612'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tooltip-image',
+					code: '\\f613'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tooltip-outline',
+					code: '\\f614'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tooltip-outline-plus',
+					code: '\\f615'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tooltip-text',
+					code: '\\f616'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tor',
+					code: '\\f617'
+				})
+				+box-icon({
+					icon: 'mdi mdi-traffic-light',
+					code: '\\f618'
+				})
+				+box-icon({
+					icon: 'mdi mdi-train',
+					code: '\\f619'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tram',
+					code: '\\f61a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-transcribe',
+					code: '\\f61b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-transcribe-close',
+					code: '\\f61c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-transfer',
+					code: '\\f61d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tree',
+					code: '\\f61e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-trello',
+					code: '\\f61f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-trending-down',
+					code: '\\f620'
+				})
+				+box-icon({
+					icon: 'mdi mdi-trending-neutral',
+					code: '\\f621'
+				})
+				+box-icon({
+					icon: 'mdi mdi-trending-up',
+					code: '\\f622'
+				})
+				+box-icon({
+					icon: 'mdi mdi-triangle',
+					code: '\\f623'
+				})
+				+box-icon({
+					icon: 'mdi mdi-triangle-outline',
+					code: '\\f624'
+				})
+				+box-icon({
+					icon: 'mdi mdi-trophy',
+					code: '\\f625'
+				})
+				+box-icon({
+					icon: 'mdi mdi-trophy-award',
+					code: '\\f626'
+				})
+				+box-icon({
+					icon: 'mdi mdi-trophy-outline',
+					code: '\\f627'
+				})
+				+box-icon({
+					icon: 'mdi mdi-trophy-variant',
+					code: '\\f628'
+				})
+				+box-icon({
+					icon: 'mdi mdi-trophy-variant-outline',
+					code: '\\f629'
+				})
+				+box-icon({
+					icon: 'mdi mdi-truck',
+					code: '\\f62a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-truck-delivery',
+					code: '\\f62b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tshirt-crew',
+					code: '\\f62c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tshirt-v',
+					code: '\\f62d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tumblr',
+					code: '\\f62e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-tumblr-reblog',
+					code: '\\f62f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-twitch',
+					code: '\\f630'
+				})
+				+box-icon({
+					icon: 'mdi mdi-twitter',
+					code: '\\f631'
+				})
+				+box-icon({
+					icon: 'mdi mdi-twitter-box',
+					code: '\\f632'
+				})
+				+box-icon({
+					icon: 'mdi mdi-twitter-circle',
+					code: '\\f633'
+				})
+				+box-icon({
+					icon: 'mdi mdi-twitter-retweet',
+					code: '\\f634'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ubuntu',
+					code: '\\f635'
+				})
+				+box-icon({
+					icon: 'mdi mdi-umbraco',
+					code: '\\f636'
+				})
+				+box-icon({
+					icon: 'mdi mdi-umbrella',
+					code: '\\f637'
+				})
+				+box-icon({
+					icon: 'mdi mdi-umbrella-outline',
+					code: '\\f638'
+				})
+				+box-icon({
+					icon: 'mdi mdi-undo',
+					code: '\\f639'
+				})
+				+box-icon({
+					icon: 'mdi mdi-undo-variant',
+					code: '\\f63a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-unfold-less',
+					code: '\\f63b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-unfold-more',
+					code: '\\f63c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-ungroup',
+					code: '\\f63d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-untappd',
+					code: '\\f63e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-upload',
+					code: '\\f63f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-usb',
+					code: '\\f640'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vector-arrange-above',
+					code: '\\f641'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vector-arrange-below',
+					code: '\\f642'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vector-circle',
+					code: '\\f643'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vector-circle-variant',
+					code: '\\f644'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vector-combine',
+					code: '\\f645'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vector-curve',
+					code: '\\f646'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vector-difference',
+					code: '\\f647'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vector-difference-ab',
+					code: '\\f648'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vector-difference-ba',
+					code: '\\f649'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vector-intersection',
+					code: '\\f64a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vector-line',
+					code: '\\f64b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vector-point',
+					code: '\\f64c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vector-polygon',
+					code: '\\f64d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vector-polyline',
+					code: '\\f64e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vector-selection',
+					code: '\\f64f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vector-square',
+					code: '\\f650'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vector-triangle',
+					code: '\\f651'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vector-union',
+					code: '\\f652'
+				})
+				+box-icon({
+					icon: 'mdi mdi-verified',
+					code: '\\f653'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vibrate',
+					code: '\\f654'
+				})
+				+box-icon({
+					icon: 'mdi mdi-video',
+					code: '\\f655'
+				})
+				+box-icon({
+					icon: 'mdi mdi-video-off',
+					code: '\\f656'
+				})
+				+box-icon({
+					icon: 'mdi mdi-video-switch',
+					code: '\\f657'
+				})
+				+box-icon({
+					icon: 'mdi mdi-view-agenda',
+					code: '\\f658'
+				})
+				+box-icon({
+					icon: 'mdi mdi-view-array',
+					code: '\\f659'
+				})
+				+box-icon({
+					icon: 'mdi mdi-view-carousel',
+					code: '\\f65a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-view-column',
+					code: '\\f65b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-view-dashboard',
+					code: '\\f65c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-view-day',
+					code: '\\f65d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-view-grid',
+					code: '\\f65e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-view-headline',
+					code: '\\f65f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-view-list',
+					code: '\\f660'
+				})
+				+box-icon({
+					icon: 'mdi mdi-view-module',
+					code: '\\f661'
+				})
+				+box-icon({
+					icon: 'mdi mdi-view-quilt',
+					code: '\\f662'
+				})
+				+box-icon({
+					icon: 'mdi mdi-view-stream',
+					code: '\\f663'
+				})
+				+box-icon({
+					icon: 'mdi mdi-view-week',
+					code: '\\f664'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vimeo',
+					code: '\\f665'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vine',
+					code: '\\f666'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vk',
+					code: '\\f667'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vk-box',
+					code: '\\f668'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vk-circle',
+					code: '\\f669'
+				})
+				+box-icon({
+					icon: 'mdi mdi-voicemail',
+					code: '\\f66a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-volume-high',
+					code: '\\f66b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-volume-low',
+					code: '\\f66c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-volume-medium',
+					code: '\\f66d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-volume-off',
+					code: '\\f66e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-vpn',
+					code: '\\f66f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-walk',
+					code: '\\f670'
+				})
+				+box-icon({
+					icon: 'mdi mdi-wallet',
+					code: '\\f671'
+				})
+				+box-icon({
+					icon: 'mdi mdi-wallet-giftcard',
+					code: '\\f672'
+				})
+				+box-icon({
+					icon: 'mdi mdi-wallet-membership',
+					code: '\\f673'
+				})
+				+box-icon({
+					icon: 'mdi mdi-wallet-travel',
+					code: '\\f674'
+				})
+				+box-icon({
+					icon: 'mdi mdi-wan',
+					code: '\\f675'
+				})
+				+box-icon({
+					icon: 'mdi mdi-watch',
+					code: '\\f676'
+				})
+				+box-icon({
+					icon: 'mdi mdi-watch-export',
+					code: '\\f677'
+				})
+				+box-icon({
+					icon: 'mdi mdi-watch-import',
+					code: '\\f678'
+				})
+				+box-icon({
+					icon: 'mdi mdi-water',
+					code: '\\f679'
+				})
+				+box-icon({
+					icon: 'mdi mdi-water-off',
+					code: '\\f67a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-water-percent',
+					code: '\\f67b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-water-pump',
+					code: '\\f67c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-weather-cloudy',
+					code: '\\f67d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-weather-fog',
+					code: '\\f67e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-weather-hail',
+					code: '\\f67f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-weather-lightning',
+					code: '\\f680'
+				})
+				+box-icon({
+					icon: 'mdi mdi-weather-night',
+					code: '\\f681'
+				})
+				+box-icon({
+					icon: 'mdi mdi-weather-partlycloudy',
+					code: '\\f682'
+				})
+				+box-icon({
+					icon: 'mdi mdi-weather-pouring',
+					code: '\\f683'
+				})
+				+box-icon({
+					icon: 'mdi mdi-weather-rainy',
+					code: '\\f684'
+				})
+				+box-icon({
+					icon: 'mdi mdi-weather-snowy',
+					code: '\\f685'
+				})
+				+box-icon({
+					icon: 'mdi mdi-weather-sunny',
+					code: '\\f686'
+				})
+				+box-icon({
+					icon: 'mdi mdi-weather-sunset',
+					code: '\\f687'
+				})
+				+box-icon({
+					icon: 'mdi mdi-weather-sunset-down',
+					code: '\\f688'
+				})
+				+box-icon({
+					icon: 'mdi mdi-weather-sunset-up',
+					code: '\\f689'
+				})
+				+box-icon({
+					icon: 'mdi mdi-weather-windy',
+					code: '\\f68a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-weather-windy-variant',
+					code: '\\f68b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-web',
+					code: '\\f68c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-webcam',
+					code: '\\f68d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-weight',
+					code: '\\f68e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-weight-kilogram',
+					code: '\\f68f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-whatsapp',
+					code: '\\f690'
+				})
+				+box-icon({
+					icon: 'mdi mdi-wheelchair-accessibility',
+					code: '\\f691'
+				})
+				+box-icon({
+					icon: 'mdi mdi-white-balance-auto',
+					code: '\\f692'
+				})
+				+box-icon({
+					icon: 'mdi mdi-white-balance-incandescent',
+					code: '\\f693'
+				})
+				+box-icon({
+					icon: 'mdi mdi-white-balance-irradescent',
+					code: '\\f694'
+				})
+				+box-icon({
+					icon: 'mdi mdi-white-balance-sunny',
+					code: '\\f695'
+				})
+				+box-icon({
+					icon: 'mdi mdi-wifi',
+					code: '\\f696'
+				})
+				+box-icon({
+					icon: 'mdi mdi-wifi-off',
+					code: '\\f697'
+				})
+				+box-icon({
+					icon: 'mdi mdi-wii',
+					code: '\\f698'
+				})
+				+box-icon({
+					icon: 'mdi mdi-wikipedia',
+					code: '\\f699'
+				})
+				+box-icon({
+					icon: 'mdi mdi-window-close',
+					code: '\\f69a'
+				})
+				+box-icon({
+					icon: 'mdi mdi-window-closed',
+					code: '\\f69b'
+				})
+				+box-icon({
+					icon: 'mdi mdi-window-maximize',
+					code: '\\f69c'
+				})
+				+box-icon({
+					icon: 'mdi mdi-window-minimize',
+					code: '\\f69d'
+				})
+				+box-icon({
+					icon: 'mdi mdi-window-open',
+					code: '\\f69e'
+				})
+				+box-icon({
+					icon: 'mdi mdi-window-restore',
+					code: '\\f69f'
+				})
+				+box-icon({
+					icon: 'mdi mdi-windows',
+					code: '\\f6a0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-wordpress',
+					code: '\\f6a1'
+				})
+				+box-icon({
+					icon: 'mdi mdi-worker',
+					code: '\\f6a2'
+				})
+				+box-icon({
+					icon: 'mdi mdi-wrap',
+					code: '\\f6a3'
+				})
+				+box-icon({
+					icon: 'mdi mdi-wrench',
+					code: '\\f6a4'
+				})
+				+box-icon({
+					icon: 'mdi mdi-wunderlist',
+					code: '\\f6a5'
+				})
+				+box-icon({
+					icon: 'mdi mdi-xbox',
+					code: '\\f6a6'
+				})
+				+box-icon({
+					icon: 'mdi mdi-xbox-controller',
+					code: '\\f6a7'
+				})
+				+box-icon({
+					icon: 'mdi mdi-xbox-controller-off',
+					code: '\\f6a8'
+				})
+				+box-icon({
+					icon: 'mdi mdi-xda',
+					code: '\\f6a9'
+				})
+				+box-icon({
+					icon: 'mdi mdi-xing',
+					code: '\\f6aa'
+				})
+				+box-icon({
+					icon: 'mdi mdi-xing-box',
+					code: '\\f6ab'
+				})
+				+box-icon({
+					icon: 'mdi mdi-xing-circle',
+					code: '\\f6ac'
+				})
+				+box-icon({
+					icon: 'mdi mdi-xml',
+					code: '\\f6ad'
+				})
+				+box-icon({
+					icon: 'mdi mdi-yeast',
+					code: '\\f6ae'
+				})
+				+box-icon({
+					icon: 'mdi mdi-yelp',
+					code: '\\f6af'
+				})
+				+box-icon({
+					icon: 'mdi mdi-youtube-play',
+					code: '\\f6b0'
+				})
+				+box-icon({
+					icon: 'mdi mdi-zip-box',
+					code: '\\f6b1'
+				})
+	='\n'
+
+	// Page Footer
+	+footer-classic({})

@@ -1,0 +1,157 @@
+extends  ../_skeleton
+
+//- Includes
+include ../sections/_header-classic
+include ../sections/_footer-classic
+include ../components/_ui-box-services
+include ../components/_ui-thumbnail
+include ../components/_ui-card
+
+block variables
+	- var activeCategory = 'pages'
+	- var pageName = 'Single Service'
+
+block page  
+	// Page Header
+	+navbar-classic({
+		logo: logo.default
+	})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-1-195x164',
+				imgOriginal: 'project-1-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-2-195x164',
+				imgOriginal: 'project-2-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-3-195x164',
+				imgOriginal: 'project-3-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-4-195x164',
+				imgOriginal: 'project-4-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-5-195x164',
+				imgOriginal: 'project-5-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-6-195x164',
+				imgOriginal: 'project-6-1200x800-original'
+			})
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-typography'
+	})
+
+	// Services
+	section.section.section-sm.section-first.bg-default.text-left
+		.container
+			.row.row-60
+				.col-md-7.col-xl-8: .single-service
+					+jpg('single-service-1-770x426')
+					h4 Value engineering
+					p Nulla facilisi nullam vehicula ipsum a arcu cursus vitae. Volutpat lacus laoreet non curabitur gravida arcu ac. Egestas egestas fringilla phasellus faucibus scelerisque
+					p Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. Turpis egestas maecenas pharetra convallis. Orci a scelerisque purus semper eget. Placerat in egestas erat imperdiet sed euismod nisi. Fermentum et sollicitudin ac orci phasellus egestas tellus. Aliquam ultrices sagittis orci a scelerisque purus semper eget. Lectus sit amet est placerat in egestas erat. 
+					.row.row-50.flex-xl-row-reverse
+						.col-xl-5
+							article.team-classic
+								a.team-classic-figure(href='#'): +jpg('team-17-270x182')
+								.team-classic-title Feel free to contact us, we are ready to help you!
+								.team-classic-name
+									a(href='#') Ben Wilson
+									| , #[span Manager]
+						.col-xl-7
+							// Bootstrap collapse
+							#accordion3.card-group-custom.card-group-corporate(role='tablist' aria-multiselectable='false')
+								+card({
+									show: true,
+									cardClass: 'card-corporate',
+									parentId: 'accordion3',
+									number: '1',
+									header: 'High Quality Guarantee'
+								})
+									p Gravida arcu ac tortor dignissim convallis aenean et tortor. Arcu dictum varius duis at consectetur lorem donec massa. Ut tellus elementum sagittis vitae et.
+								+card({
+									cardClass: 'card-corporate',
+									parentId: 'accordion3',
+									number: '2',
+									header: 'Qualified Team'
+								})
+									p Arcu non odio euismod lacinia at. Turpis nunc eget lorem dolor. Pharetra magna ac placerat vestibulum lectus mauris. 
+								+card({
+									cardClass: 'card-corporate',
+									parentId: 'accordion3',
+									number: '3',
+									header: '24/7 Support'
+								})
+									p Ut faucibus pulvinar elementum integer enim neque volutpat. Quam quisque id diam vel quam elementum pulvinar etiam non. Mauris pellentesque pulvinar
+								+card({
+									cardClass: 'card-corporate',
+									parentId: 'accordion3',
+									number: '4',
+									header: 'Latest Equipment'
+								})
+									p Eu facilisis sed odio morbi quis. Justo nec ultrices dui sapien. Viverra justo nec ultrices dui sapien eget mi proin sed. Mattis aliquam faucibus purus in. 
+
+				.col-md-5.col-xl-4
+					.aside.aside-services
+						.row.row-60
+							.aside-item.col-12
+								h5.aside-services-title quality civil Engineering
+								ul.list-category
+									li.list-category-item: a.active(href='#') All services
+									li.list-category-item: a(href='#') Value Engineering
+									li.list-category-item: a(href='#') HVAC Design
+									li.list-category-item: a(href='#') Geospatial Design
+									li.list-category-item: a(href='#') Bidding Assistance
+									li.list-category-item: a(href='#') Erosion control Design
+									li.list-category-item: a(href='#') quality control
+
+							.aside-item.col-sm-6.col-md-12
+								h5.aside-services-title Our contacts
+								include ../sections/_box-contacts
+
+							.aside-item.col-sm-6.col-md-12
+								h5.aside-services-title Our brochure
+								a.button.button-lg.button-icon.button-icon-left.button-primary.button-winona(href='contacts.html')
+									span.icon.mdi.mdi-download
+									span Download
+	='\n'
+
+	// Contact us
+	section.section.section-sm.section-last.bg-default.text-left
+		.container: .row: .col-lg-10.col-xl-8
+			h4 Any questions? Contact us
+			form.rd-form.rd-mailform
+				.row.row-20.gutters-20
+					.col-md-6: .form-wrap
+						input.form-input(id='contact-your-name-4' type='text' name='name' data-constraints='@Required')
+						label.form-label(for='contact-your-name-4') Your Name*
+					.col-md-6: .form-wrap
+						input.form-input(id='contact-email-4' type='email' name='email' data-constraints='@Email @Required')
+						label.form-label(for='contact-email-4') Your E-mail*
+					.col-md-6: .form-wrap
+						input.form-input(id='contact-company-name-4' type='text' name='name' data-constraints='@Required')
+						label.form-label(for='contact-company-name-4') Your Company Name*
+					.col-md-6: .form-wrap
+						input.form-input(id='contact-phone-4' type='text' name='phone' data-constraints='@Numeric')
+						label.form-label(for='contact-phone-4') Your Phone*
+					.col-12: .form-wrap
+						label.form-label(for='contact-message-4') Your message
+						textarea.form-input.textarea-lg(id='contact-message-4' name='message' data-constraints='@Required')
+				button.button.button-primary.button-winona(type='submit') Send request
+	='\n'
+
+	include ../sections/_section-newsletter 
+	// Page Footer
+	+footer-classic({})

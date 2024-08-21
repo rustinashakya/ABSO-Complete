@@ -1,0 +1,116 @@
+extends  ../_skeleton
+
+//- Includes
+include ../sections/_header-classic
+include ../sections/_footer-classic
+include ../components/_ui-posts
+include ../components/_ui-thumbnail
+include ../components/_ui-pagination
+
+block variables
+	- var activeCategory = 'blog'
+	- var pageName = 'Masonry blog'
+
+block page  
+	// Page Header
+	+navbar-classic({
+		logo: logo.default
+	})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-1-195x164',
+				imgOriginal: 'project-1-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-2-195x164',
+				imgOriginal: 'project-2-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-3-195x164',
+				imgOriginal: 'project-3-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-4-195x164',
+				imgOriginal: 'project-4-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-5-195x164',
+				imgOriginal: 'project-5-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-6-195x164',
+				imgOriginal: 'project-6-1200x800-original'
+			})
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-typography'
+	})
+
+	hr.hr-gray-1
+	// Grid Blog
+	section.section.section-lg.bg-gray-7
+		.container
+			.row.row-30.justify-content-center
+				.col-md-10.col-lg-6
+					.row.row-30
+						.col-12
+							+post-modern-big({
+								mod: 'post-modern-3',
+								img: 'post-7-570x528',
+								title: 'Repairs To Commercial Buildings: What To Think About',
+								video: 'https://www.youtube.com/watch?v=1UWpbtUupQQ'
+							})
+						.col-sm-6
+							+post-modern({
+								mod: 'post-modern-quote',
+								title: 'Prospects Of HVAC  Certification'
+							})
+						.col-sm-6
+							+post-modern({
+								mod: 'post-modern-2',
+								img: 'post-8-270x247',
+								title: 'Choosing Health And Safety Consultants'
+							})
+						.col-12
+							+post-modern-horizontal({
+								mod: 'post-modern-4',
+								img: 'post-9-195x191',
+								title: '8 Useful Tips on Preparing For Drainage Construction'
+							})
+				.col-md-10.col-lg-6
+					.row.row-30
+						.col-sm-6
+							+post-modern({
+								mod: 'post-modern-2',
+								img: 'post-10-270x247',
+								title: 'Questions To Ask Your Contractor'
+							})
+						.col-sm-6
+							+post-modern({
+								title: 'What To Expect From Civil Engineering Team '
+							})
+						.col-12
+							+post-modern-horizontal({
+								mod: 'post-modern-4',
+								img: 'post-11-195x191',
+								title: 'Super-hydrophobic Cement and Its Applications'
+							})
+						.col-12
+							+post-modern-big({
+								imgLink: 'post-12-570x316',
+								title: 'How To Keep Plot Foundations Waterproof'
+							})
+
+			.pagination-wrap: +pagination-bootstrap(null, 1, 3)
+	='\n'
+
+	include ../sections/_section-newsletter
+	// Page Footer
+	+footer-classic({})

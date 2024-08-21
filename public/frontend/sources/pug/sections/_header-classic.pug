@@ -1,0 +1,80 @@
+mixin navbar-classic(obj)
+	header.section.page-header
+		// RD Navbar
+		.rd-navbar-wrap
+			nav.rd-navbar.rd-navbar-modern(
+			data-layout=                'rd-navbar-fixed'
+			data-sm-layout=             'rd-navbar-fixed'
+			data-md-layout=             'rd-navbar-fixed'
+			data-md-device-layout=      'rd-navbar-fixed'
+			data-lg-layout=             'rd-navbar-fixed'
+			data-lg-device-layout=      'rd-navbar-fixed'
+			data-xl-layout=             'rd-navbar-static'
+			data-xl-device-layout=      'rd-navbar-static'
+			data-xxl-layout=            'rd-navbar-static'
+			data-xxl-device-layout=     'rd-navbar-static'
+			data-lg-stick-up-offset=    '150px'
+			data-xl-stick-up-offset=    '150px'
+			data-xxl-stick-up-offset=   '150px'
+			data-lg-stick-up=           'true'
+			data-xl-stick-up=           'true'
+			data-xxl-stick-up=          'true')
+				.rd-navbar-inner-outer
+					.rd-navbar-aside
+						.rd-navbar-aside-inner
+							ul.rd-navbar-contacts-2
+								li: .unit.unit-spacing-xs
+									.unit-left: span.icon.mdi.mdi-phone
+									.unit-body: a.phone(href='tel:#') +1 718-999-3939
+								li: .unit.unit-spacing-xs
+									.unit-left: span.icon.mdi.mdi-map-marker
+									.unit-body: a.address(href='#') 514 S. Magnolia St. Orlando, FL 32806
+
+							ul.list-share-2
+								li: a.icon.mdi.mdi-facebook(href='#')
+								li: a.icon.mdi.mdi-twitter(href='#')
+								li: a.icon.mdi.mdi-instagram(href='#')
+								li: a.icon.mdi.mdi-google-plus(href='#')
+					.rd-navbar-inner
+						// RD Navbar Panel
+						.rd-navbar-panel
+							// RD Navbar Toggle
+							button.rd-navbar-toggle(data-rd-navbar-toggle='.rd-navbar-nav-wrap'): span
+							// RD Navbar Brand
+							.rd-navbar-brand: a.brand(href='index.html'): +png(obj.logo, 'brand-logo-dark')
+
+						.rd-navbar-right.rd-navbar-nav-wrap
+							.rd-navbar-aside.d-xl-none
+								.rd-navbar-aside-inner
+									ul.rd-navbar-contacts-2
+										li: .unit.unit-spacing-xs
+											.unit-left: span.icon.mdi.mdi-phone
+											.unit-body: a.phone(href='tel:#') +1 718-999-3939
+										li: .unit.unit-spacing-xs
+											.unit-left: span.icon.mdi.mdi-map-marker
+											.unit-body: a.address(href='#') 514 S. Magnolia St. Orlando, FL 32806
+
+									ul.list-share-2
+										li: a.icon.mdi.mdi-facebook(href='#')
+										li: a.icon.mdi.mdi-twitter(href='#')
+										li: a.icon.mdi.mdi-instagram(href='#')
+										li: a.icon.mdi.mdi-google-plus(href='#')
+							.rd-navbar-main
+								
+								include ../includes/_navigation
+
+						.rd-navbar-project-hamburger.rd-navbar-project-hamburger-open.rd-navbar-fixed-element-1( data-multitoggle='.rd-navbar-inner', data-multitoggle-blur='.rd-navbar-wrap', data-multitoggle-isolate )
+							.project-hamburger
+								- for (var i = 0; i < 3 ; i++)
+									span.project-hamburger-arrow
+
+						.rd-navbar-project
+							.rd-navbar-project-header
+								h5.rd-navbar-project-title Latest Projects
+								.rd-navbar-project-hamburger.rd-navbar-project-hamburger-close( data-multitoggle='.rd-navbar-inner', data-multitoggle-blur='.rd-navbar-wrap', data-multitoggle-isolate )
+									.project-close
+										span
+										span
+
+							.rd-navbar-project-content.rd-navbar-content: div: .row.gutters-20(data-lightgallery='group')
+								block

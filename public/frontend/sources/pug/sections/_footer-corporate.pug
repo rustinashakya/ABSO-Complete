@@ -1,0 +1,31 @@
+mixin footer-corporate(obj)
+  footer.section.footer-corporate.context-dark(class=obj.mod)
+    .container
+      .section-lg
+        .row.row-50.justify-content-sm-between
+          .col-sm-6.col-md-4.col-xl-3
+            h6.footer-corporate-title.oh-desktop: span.d-inline-block.wow.slideInUp About Us
+            p.wow.fadeInRight=obj.text
+            +widget-list([], '', 'footer-social-list footer-social-list-2 footer-social-list-4')
+
+          .col-sm-5.col-md-4.col-lg-3
+            h6.footer-corporate-title.oh-desktop: span.d-inline-block.wow.slideInUp Contact us
+            ul.footer-creative-contacts.d-inline-block.d-md-block
+              li.wow.fadeInLeft
+                p.footer-creative-contacts-title Free consultation
+                a.phone(href='tel:#') +1 718-999-3939
+              li.wow.fadeInLeft(data-wow-delay='.05s')
+                p.footer-creative-contacts-title Address
+                a.address(href='#') 514 S. Magnolia St. Orlando, FL 32806
+              li.wow.fadeInLeft(data-wow-delay='.1s')
+                p.footer-creative-contacts-title E-mail
+                a.mail(href='mailto:#') info@demolink.org
+
+          .col-md-4
+            h6.footer-corporate-title.oh-desktop: span.d-inline-block.wow.slideInUp Useful links
+            ul.footer-corporate-list.d-inline-block.d-sm-block.wow.fadeInUp
+              each itemList in obj.list
+                li: a(href= itemList.href ? itemList.href : '#')=itemList.text
+
+    .footer-corporate-panel: .container
+      +rights({ name: obj.name })

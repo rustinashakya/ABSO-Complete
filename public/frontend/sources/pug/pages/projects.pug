@@ -1,0 +1,101 @@
+extends  ../_skeleton
+
+//- Includes
+include ../sections/_header-classic
+include ../sections/_footer-classic
+include ../components/_ui-thumbnail
+
+block variables
+	- var activeCategory = 'projects'
+	- var pageName = 'Projects'
+
+block page  
+	// Page Header
+	+navbar-classic({
+		logo: logo.default
+	})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-1-195x164',
+				imgOriginal: 'project-1-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-2-195x164',
+				imgOriginal: 'project-2-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-3-195x164',
+				imgOriginal: 'project-3-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-4-195x164',
+				imgOriginal: 'project-4-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-5-195x164',
+				imgOriginal: 'project-5-1200x800-original'
+			})
+		.col-6
+			+thumbnail-creative({
+				img: 'project-6-195x164',
+				imgOriginal: 'project-6-1200x800-original'
+			})
+
+	+breadcrumbs({
+		category: activeCategory,
+		path: [pageName],
+		bgImage: 'bg-typography'
+	})
+
+	// Services 2
+	section.section.section-lg.bg-default
+		.container
+			.isotope-wrap
+				.isotope-filters.isotope-filters-horizontal
+					//- Isotope Filters
+					button.isotope-filters-toggle.button.button-sm.button-icon.button-icon-right.button-gray-3(data-custom-toggle='.isotope-filters-list', data-custom-toggle-disable-on-blur='true')
+						span.icon.mdi.mdi-chevron-down
+						| Filter
+					ul.isotope-filters-list
+						li: a.active(href='#', data-isotope-filter='*', data-isotope-group='gallery') All
+						li: a(href='#', data-isotope-filter='Type 1', data-isotope-group='gallery') Reconstruction
+						li: a(href='#', data-isotope-filter='Type 2', data-isotope-group='gallery') Architectural Design
+				.row.isotope(data-isotope-layout='masonry', data-column-class='.col-1', data-lightgallery='group')
+					.col-1.isotope-item.isotope-sizer
+					.col-md-6.isotope-item(data-filter='Type 2')
+						+thumbnail-classic({
+							mod: 'thumbnail-lg',
+							img: 'project-1-570x299',
+							imgOriginal: 'project-11-1200x800-original',
+							title: 'Smith office center'
+						})
+					.col-md-6.isotope-item(data-filter='Type 1')
+						+thumbnail-classic({
+							mod: 'thumbnail-lg',
+							img: 'project-2-570x299',
+							imgOriginal: 'project-12-1200x800-original',
+							title: 'Deltatrans Warehouse'
+						})
+					.col-md-6.isotope-item(data-filter='Type 2')
+						+thumbnail-classic({
+							mod: 'thumbnail-lg',
+							img: 'project-3-570x299',
+							imgOriginal: 'project-13-1200x800-original',
+							title: 'Graham Bridge'
+						})
+					.col-md-6.isotope-item(data-filter='Type 1')
+						+thumbnail-classic({
+							mod: 'thumbnail-lg',
+							img: 'project-4-570x299',
+							imgOriginal: 'project-14-1200x800-original',
+							title: 'Dallas Art park'
+						})
+	='\n'
+
+	include ../sections/_section-newsletter
+	// Page Footer
+	+footer-classic({})
